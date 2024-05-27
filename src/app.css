@@ -1,0 +1,99 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+    scroll-behavior: smooth;
+    font-family: "Lexend", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variant: normal;
+    scroll-behavior: smooth;
+
+    @apply bg-bg-primary text-txt text-base;
+}
+
+@layer base {
+    h1 {
+        @apply text-4xl md:text-5xl xl:text-6xl mb-8 lg:mb-12 font-semibold;
+    }
+
+    h2 {
+        @apply text-3xl md:text-4xl xl:text-5xl mb-7 lg:mb-11 font-semibold;
+    }
+
+    h3 {
+        @apply text-2xl md:text-3xl xl:text-4xl mb-6 lg:mb-10 font-semibold;
+    }
+
+    h4 {
+        @apply text-xl md:text-2xl xl:text-3xl mb-5 lg:mb-9 font-semibold;
+    }
+
+    h5 {
+        @apply text-lg md:text-xl xl:text-2xl mb-4 lg:mb-8 font-semibold;
+    }
+
+    h6 {
+        @apply text-base md:text-lg xl:text-xl mb-3 lg:mb-7 font-semibold;
+    }
+
+    span {
+        font-weight: inherit;
+        font-family: inherit;
+    }
+
+    a {
+        @apply duration-200 hover:text-secondary;
+    }
+
+    picture {
+        @apply block;
+
+        & img {
+            @apply block w-full h-auto;
+        }
+    }
+}
+
+@layer utilities {
+    .text-h1 {
+        @apply text-4xl md:text-5xl xl:text-6xl;
+    }
+
+    .text-h2 {
+        @apply text-3xl md:text-4xl xl:text-5xl;
+    }
+
+    .text-h3 {
+        @apply text-2xl md:text-3xl xl:text-4xl;
+    }
+
+    .text-h4 {
+        @apply text-xl md:text-2xl xl:text-3xl;
+    }
+
+    .text-h5 {
+        @apply text-lg md:text-xl xl:text-2xl;
+    }
+
+    .text-h6 {
+        @apply text-base md:text-lg xl:text-xl;
+    }
+
+    .content-sm {
+        @apply max-w-4xl mx-auto;
+    }
+
+    .content-md {
+        @apply max-w-5xl mx-auto;
+    }
+
+    .content-lg {
+        @apply max-w-6xl mx-auto;
+    }
+
+    .content-xl {
+        @apply max-w-7xl mx-auto;
+    }
+}

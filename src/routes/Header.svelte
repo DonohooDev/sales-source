@@ -1,6 +1,7 @@
 <script lang="ts">
     import salesSourceLogo from "$lib/assets/logos/sale-source-logo.png";
     import ButtonLink from "$lib/components/ButtonLink.svelte";
+    import DefaultIcon from "$lib/components/DefaultIcon.svelte";
     import { slide } from "svelte/transition";
     import { quintOut } from "svelte/easing";
 
@@ -14,7 +15,7 @@
 <header class="bg-primary">
     <!-- Main Nav -->
     <nav
-        class="relative px-4 py-4 flex justify-between lg:justify-start items-center bg-white content-xl"
+        class="relative px-4 py-4 flex justify-between lg:justify-start items-center bg-white content-lg"
     >
         <a href="/">
             <img class="w-36" alt="Sales Source Inc logo" src={salesSourceLogo} />
@@ -26,7 +27,7 @@
                 class="flex items-center text-txt-white p-2 hover:text-txt-hover rounded-md"
                 on:click={toggleMenu}
             >
-                <i class="fa-solid fa-bars fa-xl" />
+                <DefaultIcon classNames="fa-solid fa-bars fa-xl" />
             </button>
         </div>
 

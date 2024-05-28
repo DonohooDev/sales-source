@@ -36,3 +36,12 @@ npm run build
 You can preview the production build with `npm run preview`.
 
 > To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+
+
+### Resources
+
+#### Saos Example
+- https://github.com/shiryel/saos/blob/master/demo_sveltekit/src/components/animations.svelte
+
+#### Embla Carousel Docs
+- https://www.embla-carousel.com/get-started/svelte/

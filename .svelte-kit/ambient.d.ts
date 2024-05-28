@@ -30,6 +30,7 @@ declare module '$env/static/private' {
 	export const MANPATH: string;
 	export const COREPACK_ROOT: string;
 	export const npm_package_devDependencies_prettier: string;
+	export const npm_package_devDependencies_saos: string;
 	export const TERM_PROGRAM: string;
 	export const npm_package_devDependencies_eslint_plugin_svelte: string;
 	export const NODE: string;
@@ -158,6 +159,7 @@ declare module '$env/dynamic/private' {
 		MANPATH: string;
 		COREPACK_ROOT: string;
 		npm_package_devDependencies_prettier: string;
+		npm_package_devDependencies_saos: string;
 		TERM_PROGRAM: string;
 		npm_package_devDependencies_eslint_plugin_svelte: string;
 		NODE: string;

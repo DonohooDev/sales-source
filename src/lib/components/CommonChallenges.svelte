@@ -1,9 +1,6 @@
 <script lang="ts">
     import DefaultIcon from "$lib/components/DefaultIcon.svelte";
     import Saos from "saos";
-    import { onMount } from "svelte";
-
-    onMount(() => {});
 </script>
 
 <section class="common-challenges content-lg">

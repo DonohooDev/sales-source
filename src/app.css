@@ -86,11 +86,11 @@ html {
     }
 
     .text-subtitle {
-        @apply text-base md:text-lg xl:text-xl mb-4 lg:mb-6 font-normal;
+        @apply text-base md:text-lg mb-4 md:mb-6 font-normal;
     }
 
     .text-subtext {
-        @apply text-xs md:text-sm;
+        @apply text-sm md:text-base;
     }
 
     .content-sm {

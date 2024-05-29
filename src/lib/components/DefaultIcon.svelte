@@ -3,4 +3,4 @@
     export let white = false;
 </script>
 
-<i style="color: #{white ? 'f9f9f9' : '101828'}" class={classNames} />
+<i style="color: #{white ? 'f9f9f9' : '202046'}" class={classNames} />

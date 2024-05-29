@@ -61,7 +61,7 @@ html {
     }
 
     section {
-        @apply mb-4 md:mb-6 xl:mb-8 px-8 md:px-10 lg:px-12 pt-10 md:pt-14 xl:pt-20 pb-6 md:pb-10 xl:pb-14;
+        @apply mb-4 md:mb-8 xl:mb-14 px-8 md:px-10 lg:px-12 py-10 md:py-14 xl:py-20;
     }
 
     footer {
@@ -95,22 +95,26 @@ html {
     }
 
     .text-subtitle {
-        @apply text-base md:text-lg mb-4 md:mb-6 font-normal;
+        @apply text-base md:text-lg mb-16 md:mb-20 xl:mb-28 font-normal;
     }
 
     .text-subtext {
         @apply text-sm md:text-base;
     }
 
+    .content-xs {
+        @apply max-w-2xl mx-auto w-full;
+    }
+
     .content-sm {
-        @apply max-w-4xl mx-auto;
+        @apply max-w-4xl mx-auto w-full;
     }
 
     .content-md {
-        @apply max-w-7xl mx-auto;
+        @apply max-w-6xl mx-auto w-full;
     }
 
     .content-lg {
-        @apply max-w-[1400px] mx-auto;
+        @apply max-w-[1400px] mx-auto w-full;
     }
 }

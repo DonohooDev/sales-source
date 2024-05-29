@@ -15,18 +15,18 @@
 
         <nav class="footer-nav">
             <ul class="list-none">
-                <p class="font-semibold text-stone-400">Resources</p>
+                <p class="font-bold">Resources</p>
                 <li><a href="/privacy-policy" class="text-subtext">Privacy Policy</a></li>
             </ul>
         </nav>
 
         <nav class="footer-nav">
             <ul class="list-none">
-                <p class="font-semibold text-stone-400">Navigation</p>
+                <p class="font-bold">Navigation</p>
                 <li><a href="/" class="text-subtext">Home</a></li>
                 <li><a href="/about-us" class="text-subtext">About</a></li>
                 <li><a href="/blog" class="text-subtext">Blog</a></li>
-                <li><a href="/contact" class="text-subtext">Contact</a></li>
+                <li><a href="/contact-us" class="text-subtext">Contact</a></li>
             </ul>
         </nav>
     </div>
@@ -50,7 +50,7 @@
 
 <style lang="postcss">
     footer {
-        @apply bg-secondary text-txt-white;
+        @apply bg-primary text-txt-white;
     }
 
     .footer-nav {

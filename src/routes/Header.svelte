@@ -36,8 +36,8 @@
             <NavLink href="/about-us" text="About Us" />
             <NavLink href="/blog" text="Blog" />
             <NavLinkDropdown menuName="Services">
-                <NavLink href="/blog" text="Blog Intelligence Marker" />
-                <NavLink href="/about-us" text="About Us" />
+                <NavLink href="/blog" text="Test" />
+                <NavLink href="/about-us" text="Test 2" />
             </NavLinkDropdown>
         </ul>
 

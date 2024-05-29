@@ -75,7 +75,7 @@
             </p>
         </span>
         <span>
-            <ButtonLink href="/contact" btnText="Contact Us" />
+            <ButtonLink href="/contact-us" btnText="Contact Us" />
         </span>
     </div>
 </section>

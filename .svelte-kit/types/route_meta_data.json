@@ -2,5 +2,17 @@
 	"/": [
 		"src/routes/+layout.ts",
 		"src/routes/+layout.ts"
+	],
+	"/about-us": [
+		"src/routes/+layout.ts"
+	],
+	"/blog": [
+		"src/routes/+layout.ts"
+	],
+	"/contact-us": [
+		"src/routes/+layout.ts"
+	],
+	"/privacy-policy": [
+		"src/routes/+layout.ts"
 	]
 }

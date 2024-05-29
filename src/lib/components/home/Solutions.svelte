@@ -138,7 +138,7 @@
     }
 
     .card {
-        @apply bg-bg-primary shadow-md rounded-lg w-[300px] sm:w-[375px] mx-auto text-center py-8 px-6 lg:py-12 lg:px-10;
+        @apply bg-bg-primary shadow-md rounded-lg  sm:w-[375px] mx-auto text-center py-8 px-6 lg:py-12 lg:px-10;
     }
 
     .solution-list {

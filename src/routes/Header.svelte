@@ -1,9 +1,10 @@
 <script lang="ts">
-    import salesSourceLogo from "$lib/assets/logos/sale-source-logo.png";
+    import salesSourceLogo from "$lib/assets/logos/sales-source-logo.png";
     import ButtonLink from "$lib/components/ButtonLink.svelte";
     import DefaultIcon from "$lib/components/DefaultIcon.svelte";
     import { slide } from "svelte/transition";
     import { quintOut } from "svelte/easing";
+    import CopyrightText from "$lib/components/CopyrightText.svelte";
 
     let isMenuOpen = false;
 
@@ -27,7 +28,7 @@
                 class="flex items-center text-txt-white p-2 hover:text-txt-hover rounded-md"
                 on:click={toggleMenu}
             >
-                <DefaultIcon classNames="fa-solid fa-bars fa-xl" />
+                <DefaultIcon white classNames="fa-solid fa-bars fa-xl" />
             </button>
         </div>
 
@@ -102,9 +103,9 @@
                         <ButtonLink href="/contact-us" btnText="Contact Us" />
                     </div>
 
-                    <p class="my-4 text-xs text-center text-slate-400">
-                        <span>© Sales Source Inc. {new Date().getFullYear()}</span>
-                    </p>
+                    <!-- <p class="my-4 text-center text-slate-400">
+                        <CopyrightText />
+                    </p> -->
                 </div>
             </nav>
         </div>

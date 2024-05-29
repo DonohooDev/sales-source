@@ -47,6 +47,11 @@ html {
         @apply duration-200 hover:text-secondary;
     }
 
+    a,
+    p {
+        @apply tracking-wide;
+    }
+
     picture {
         @apply block;
 
@@ -57,6 +62,10 @@ html {
 
     section {
         @apply mb-4 md:mb-6 xl:mb-8 px-8 md:px-10 lg:px-12 pt-10 md:pt-14 xl:pt-20 pb-6 md:pb-10 xl:pb-14;
+    }
+
+    footer {
+        @apply py-4 md:py-6 xl:py-8 px-8 md:px-10 lg:px-12;
     }
 }
 

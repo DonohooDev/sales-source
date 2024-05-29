@@ -17,9 +17,9 @@ export default {
             "secondary": "#41497E",
             "bg-primary": "#F9F9F9",
             "bg-soft": colors.zinc[100],
-            "bg-contrast": colors.neutral[300],
             "bg-contrast": "#EBEBEB",
             "disabled": "#D1D5DB",
+            "divider": colors.zinc[200],
             "txt-hover": colors.gray[300],
             "txt-header": "#101828",
             "txt": colors.gray[500],
@@ -49,7 +49,16 @@ export default {
             "pink": colors.pink,
             "rose": colors.rose,
         },
-        extend: {},
+        extend: {
+            transitionProperty: {
+                width: "width",
+                height: "height",
+                spacing: "margin, padding",
+                bg: "background-color",
+                border: "border-color",
+                transform: "transform",
+            },
+        },
     },
     plugins: [
         plugin(function ({ addVariant }) {

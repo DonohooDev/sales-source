@@ -1,2 +1,10 @@
 node_modules
 .env
+build
+.svelte-kit
+.svelte-kit/output
+.svelte-kit/development
+.svelte-kit/build
+.DS_Store
+.AppleDouble
+.LSOverride

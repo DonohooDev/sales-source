@@ -8,12 +8,16 @@
     import NavLink from "$lib/components/header/NavLink.svelte";
     import NavLinkDropdown from "$lib/components/header/NavLinkDropdown.svelte";
     import MobileNavLinkDropdown from "$lib/components/header/MobileNavLinkDropdown.svelte";
+    import { setContext } from "svelte";
+    import type { HeaderContext } from "../types/context/header";
 
     let isMenuOpen = false;
 
-    const toggleMenu = () => {
-        isMenuOpen = !isMenuOpen;
-    };
+    function toggleMenu(newState?: boolean) {
+        isMenuOpen = newState !== undefined ? newState : !isMenuOpen;
+    }
+
+    setContext<HeaderContext>("header", { toggleMenu });
 </script>
 
 <header>
@@ -25,7 +29,7 @@
 
         <!-- Hamburger Menu -->
         <div class="hamburger">
-            <button on:click={toggleMenu}>
+            <button on:click={() => toggleMenu()}>
                 <DefaultIcon white classNames="fa-solid fa-bars fa-xl" />
             </button>
         </div>
@@ -55,7 +59,7 @@
                 class="mobile-backdrop"
                 aria-hidden
                 aria-label="close mobile menu"
-                on:click={toggleMenu}
+                on:click={() => toggleMenu()}
             />
 
             <!-- Menu Content -->
@@ -71,7 +75,7 @@
                     <button
                         class="text-txt-white hover:text-txt-hover"
                         aria-label="close mobile menu"
-                        on:click={toggleMenu}
+                        on:click={() => toggleMenu()}
                     >
                         <i class="fa-solid fa-xmark fa-xl" />
                     </button>
@@ -82,14 +86,42 @@
                     <NavLink href="/" text="Home" />
                     <NavLink href="/about-us" text="About Us" />
                     <MobileNavLinkDropdown menuName="Services">
-                        <li><a href="/" class="mobile-sub-link">Home</a></li>
-                        <li><a href="/about-us" class="mobile-sub-link">About Us</a></li>
-                        <li><a href="/blog" class="mobile-sub-link">Blog</a></li>
+                        <li>
+                            <a href="/" class="mobile-sub-link" on:click={() => toggleMenu()}
+                                >Home</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                href="/about-us"
+                                class="mobile-sub-link"
+                                on:click={() => toggleMenu()}>About Us</a
+                            >
+                        </li>
+                        <li>
+                            <a href="/blog" class="mobile-sub-link" on:click={() => toggleMenu()}
+                                >Blog</a
+                            >
+                        </li>
                     </MobileNavLinkDropdown>
                     <MobileNavLinkDropdown menuName="Services">
-                        <li><a href="/" class="mobile-sub-link">Home</a></li>
-                        <li><a href="/about-us" class="mobile-sub-link">About Us</a></li>
-                        <li><a href="/blog" class="mobile-sub-link">Blog</a></li>
+                        <li>
+                            <a href="/" class="mobile-sub-link" on:click={() => toggleMenu()}
+                                >Home</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                href="/about-us"
+                                class="mobile-sub-link"
+                                on:click={() => toggleMenu()}>About Us</a
+                            >
+                        </li>
+                        <li>
+                            <a href="/blog" class="mobile-sub-link" on:click={() => toggleMenu()}
+                                >Blog</a
+                            >
+                        </li>
                     </MobileNavLinkDropdown>
                     <NavLink href="/blog" text="Blog" />
                 </ul>

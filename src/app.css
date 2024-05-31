@@ -61,11 +61,17 @@ html {
     }
 
     section {
-        @apply mb-4 md:mb-8 xl:mb-14 px-8 md:px-10 lg:px-12 py-10 md:py-14 xl:py-20;
+        @apply mb-4 md:mb-8 xl:mb-14 px-8 md:px-10 lg:px-12 py-10 md:py-14 xl:py-16;
     }
 
     footer {
         @apply py-4 md:py-6 xl:py-8 px-8 md:px-10 lg:px-12;
+    }
+
+    details summary::-webkit-details-marker,
+    details summary::marker {
+        display: none;
+        content: "";
     }
 }
 

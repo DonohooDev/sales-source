@@ -1,9 +1,14 @@
 <script lang="ts">
+    import { getContext } from "svelte";
+    import type { HeaderContext } from "../../../types/context/header";
+
     export let href: string;
     export let text: string;
+
+    const { toggleMenu } = getContext<HeaderContext>("header");
 </script>
 
-<li><a {href}>{text}</a></li>
+<li><a {href} on:click={() => toggleMenu(false)}>{text}</a></li>
 
 <style lang="postcss">
     a {

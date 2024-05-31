@@ -2,6 +2,24 @@
     import GridBackgroundWrapper from "$lib/components/GridBackgroundWrapper.svelte";
 </script>
 
+<svelte:head>
+    <title>Privacy Policy | SalesSource</title>
+    <meta
+        name="description"
+        content="Our code of conduct and your pledge to be an upstanding member of our services."
+    />
+    <meta name="keywords" content="privacy policy, code of conduct, pledge" />
+    <meta property="og:title" content="Privacy Policy" />
+    <meta
+        property="og:description"
+        content="Our code of conduct and your pledge to be an upstanding member of our services."
+    />
+    <meta property="og:url" content="https://salessource.com/privacy-policy" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Sales Source" />
+    <meta property="og:locale" content="en_US" />
+</svelte:head>
+
 <GridBackgroundWrapper>
     <section class="content-lg">
         <h1>Privacy Policy</h1>

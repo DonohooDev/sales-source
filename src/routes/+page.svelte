@@ -5,10 +5,12 @@
     import FrequentlyAskedQuestions from "$lib/components/home/FrequentlyAskedQuestions.svelte";
     import GridBackgroundWrapper from "$lib/components/GridBackgroundWrapper.svelte";
     import Solutions from "$lib/components/home/Solutions.svelte";
+    import MobileDashboard from "$lib/assets/virtual-dashboard-alt.png";
+    import DesktopDashboard from "$lib/assets/virtual-dashboard-alt-desktop.png";
 </script>
 
 <svelte:head>
-    <title>Modernize Your Pipeline Creation Processes Permanently</title>
+    <title>Modernize Your Pipeline Creation Processes Permanently | SalesSource</title>
     <meta
         name="description"
         content="Revolutionize your sales strategy with cutting-edge technology and expert guidance."
@@ -48,6 +50,17 @@
         </div>
     </section>
 
+    <section class="dashboard">
+        <picture>
+            <source srcset={DesktopDashboard} media="(min-width: 1024px)" />
+            <img
+                src={MobileDashboard}
+                alt="Virtual Dashboard"
+                class="mx-auto w-[300px] md:w-[500px] xl:w-[700px]"
+            />
+        </picture>
+    </section>
+
     <CompaniesCarousel />
 
     <CommonChallenges />
@@ -58,4 +71,7 @@
 </GridBackgroundWrapper>
 
 <style type="postcss">
+    .dashboard {
+        @apply m-0 p-0 lg:-mt-4 xl:-mt-8;
+    }
 </style>

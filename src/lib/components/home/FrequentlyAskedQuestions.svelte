@@ -50,7 +50,7 @@
                             <span>{faq.question}</span>
                             <span
                                 class:rotate-180={openIndex === index}
-                                class="transition-transform ease"
+                                class="transition-transform ease ml-6"
                             >
                                 <i class="fa-solid fa-chevron-up" />
                             </span>

@@ -68,6 +68,14 @@
     "file": "_app/immutable/assets/grid-background.Cg5nIhgm.svg",
     "src": "src/lib/assets/grid-background.svg"
   },
+  "src/lib/assets/virtual-dashboard-alt-desktop.png": {
+    "file": "_app/immutable/assets/virtual-dashboard-alt-desktop.DSwjCFjE.png",
+    "src": "src/lib/assets/virtual-dashboard-alt-desktop.png"
+  },
+  "src/lib/assets/virtual-dashboard-alt.png": {
+    "file": "_app/immutable/assets/virtual-dashboard-alt.Zi8LVW10.png",
+    "src": "src/lib/assets/virtual-dashboard-alt.png"
+  },
   "src/routes/+layout.svelte": {
     "file": "entries/pages/_layout.svelte.js",
     "name": "entries/pages/_layout.svelte",
@@ -78,7 +86,7 @@
       "_DefaultIcon.js"
     ],
     "css": [
-      "_app/immutable/assets/_layout.DV3Q6q_L.css"
+      "_app/immutable/assets/_layout.GsivOeSU.css"
     ]
   },
   "src/routes/+layout.ts": {
@@ -98,7 +106,11 @@
       "_GridBackgroundWrapper.js"
     ],
     "css": [
-      "_app/immutable/assets/_page.hH4KCj95.css"
+      "_app/immutable/assets/_page.DLcEny7k.css"
+    ],
+    "assets": [
+      "_app/immutable/assets/virtual-dashboard-alt.Zi8LVW10.png",
+      "_app/immutable/assets/virtual-dashboard-alt-desktop.DSwjCFjE.png"
     ]
   },
   "src/routes/about-us/+page.svelte": {

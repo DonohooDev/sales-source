@@ -1,9 +1,9 @@
 <script lang="ts">
-    import ButtonLink from "$lib/components/ButtonLink.svelte";
+    import ButtonLink from "$lib/components/shared/ButtonLink.svelte";
     import CommonChallenges from "$lib/components/home/CommonChallenges.svelte";
     import CompaniesCarousel from "$lib/components/home/CompaniesCarousel.svelte";
     import FrequentlyAskedQuestions from "$lib/components/home/FrequentlyAskedQuestions.svelte";
-    import GridBackgroundWrapper from "$lib/components/GridBackgroundWrapper.svelte";
+    import GridBackgroundWrapper from "$lib/components/shared/GridBackgroundWrapper.svelte";
     import Solutions from "$lib/components/home/Solutions.svelte";
     import MobileDashboard from "$lib/assets/virtual-dashboard-alt.png";
     import DesktopDashboard from "$lib/assets/virtual-dashboard-alt-desktop.png";

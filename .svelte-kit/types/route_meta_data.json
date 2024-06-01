@@ -12,6 +12,9 @@
 	"/contact-us": [
 		"src/routes/+layout.ts"
 	],
+	"/howWeHelp": [
+		"src/routes/+layout.ts"
+	],
 	"/privacy-policy": [
 		"src/routes/+layout.ts"
 	]

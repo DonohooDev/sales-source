@@ -1,6 +1,6 @@
 <script lang="ts">
     import boltshiftLogo from "$lib/assets/logos/boltshift-logo.png";
-    import DefaultIcon from "$lib/components/DefaultIcon.svelte";
+    import DefaultIcon from "$lib/components/shared/DefaultIcon.svelte";
     import type { EmblaCarouselType, EmblaEventType, EmblaOptionsType } from "embla-carousel";
     import Carousel from "embla-carousel-svelte";
 

@@ -1,5 +1,5 @@
 <script lang="ts">
-    import ButtonLink from "../ButtonLink.svelte";
+    import ButtonLink from "$lib/components/shared/ButtonLink.svelte";
 
     let faqs = [
         {

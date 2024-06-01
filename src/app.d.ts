@@ -8,10 +8,6 @@ declare global {
         // interface PageState {}
         // interface Platform {}
     }
-
-    namespace window {
-        grecaptcha: any;
-    }
 }
 
 export {};

@@ -1,15 +1,15 @@
 <script lang="ts">
     import salesSourceLogo from "$lib/assets/logos/sales-source-logo.png";
-    import ButtonLink from "$lib/components/ButtonLink.svelte";
-    import DefaultIcon from "$lib/components/DefaultIcon.svelte";
+    import ButtonLink from "$lib/components/shared/ButtonLink.svelte";
+    import DefaultIcon from "$lib/components/shared/DefaultIcon.svelte";
     import { slide } from "svelte/transition";
     import { quintOut } from "svelte/easing";
-    import CopyrightText from "$lib/components/CopyrightText.svelte";
     import NavLink from "$lib/components/header/NavLink.svelte";
     import NavLinkDropdown from "$lib/components/header/NavLinkDropdown.svelte";
     import MobileNavLinkDropdown from "$lib/components/header/MobileNavLinkDropdown.svelte";
     import { setContext } from "svelte";
     import type { HeaderContext } from "../types/context/header";
+    import MobileNavLink from "$lib/components/header/MobileNavLink.svelte";
 
     let isMenuOpen = false;
 
@@ -38,11 +38,20 @@
         <ul class="hidden lg:flex gap-4 lg:ml-10 text-txt-white flex-1">
             <NavLink href="/" text="Home" />
             <NavLink href="/about-us" text="About Us" />
-            <NavLink href="/blog" text="Blog" />
-            <NavLinkDropdown menuName="Services">
-                <NavLink href="/blog" text="Test" />
-                <NavLink href="/about-us" text="Test 2" />
+            <NavLinkDropdown menuName="Who We Help">
+                <!-- <NavLink href="/blog" text="Marketing Teams" />
+                <NavLink href="/blog" text="SDR Teams" />
+                <NavLink href="/blog" text="Ops Teams" />
+                <NavLink href="/blog" text="Enablement Teams" />
+                <NavLink href="/blog" text="Investors" /> -->
             </NavLinkDropdown>
+            <NavLinkDropdown menuName="How We Help">
+                <!-- <NavLink href="/how-we-help/technology" text="Audits" />
+                <NavLink href="/how-we-help/technology" text="Services" /> -->
+                <NavLink href="/howWeHelp" text="Technology" />
+            </NavLinkDropdown>
+            <NavLink href="/blog" text="Blog" />
+            <NavLink href="/blog" text="Resources" />
         </ul>
 
         <!-- Contact Us -->
@@ -83,58 +92,31 @@
 
                 <!-- Menu Items -->
                 <ul class="mobile-menu">
-                    <NavLink href="/" text="Home" />
-                    <NavLink href="/about-us" text="About Us" />
-                    <MobileNavLinkDropdown menuName="Services">
-                        <li>
-                            <a href="/" class="mobile-sub-link" on:click={() => toggleMenu()}
-                                >Home</a
-                            >
-                        </li>
-                        <li>
-                            <a
-                                href="/about-us"
-                                class="mobile-sub-link"
-                                on:click={() => toggleMenu()}>About Us</a
-                            >
-                        </li>
-                        <li>
-                            <a href="/blog" class="mobile-sub-link" on:click={() => toggleMenu()}
-                                >Blog</a
-                            >
-                        </li>
+                    <MobileNavLink href="/" text="Home" />
+                    <MobileNavLink href="/about-us" text="About Us" />
+                    <MobileNavLinkDropdown menuName="Who We Help">
+                        <!-- <MobileNavLink isSubLink href="/" text="Marketing Teams" />
+                        <MobileNavLink isSubLink href="/" text="SDR Teams" />
+                        <MobileNavLink isSubLink href="/" text="Ops Teams" />
+                        <MobileNavLink isSubLink href="/" text="Enablement Teams" />
+                        <MobileNavLink isSubLink href="/" text="Investors" /> -->
                     </MobileNavLinkDropdown>
-                    <MobileNavLinkDropdown menuName="Services">
-                        <li>
-                            <a href="/" class="mobile-sub-link" on:click={() => toggleMenu()}
-                                >Home</a
-                            >
-                        </li>
-                        <li>
-                            <a
-                                href="/about-us"
-                                class="mobile-sub-link"
-                                on:click={() => toggleMenu()}>About Us</a
-                            >
-                        </li>
-                        <li>
-                            <a href="/blog" class="mobile-sub-link" on:click={() => toggleMenu()}
-                                >Blog</a
-                            >
-                        </li>
+                    <MobileNavLinkDropdown menuName="How We Help">
+                        <!-- <MobileNavLink isSubLink href="/how-we-help/technology" text="Audits" />
+                        <MobileNavLink isSubLink href="/how-we-help/technology" text="Services" /> -->
+                        <MobileNavLink isSubLink href="/" text="Technology" />
                     </MobileNavLinkDropdown>
-                    <NavLink href="/blog" text="Blog" />
+                    <MobileNavLink href="/blog" text="Blog" />
+                    <MobileNavLink href="/" text="Resources" />
                 </ul>
 
                 <!-- Contact Us -->
                 <div class="mt-auto">
-                    <div class="mt-6 mb-2">
+                    <!-- svelte-ignore a11y-click-events-have-key-events -->
+                    <!-- svelte-ignore a11y-no-static-element-interactions -->
+                    <div class="mt-6 mb-2" on:click={() => toggleMenu(false)}>
                         <ButtonLink href="/contact-us" btnText="Contact Us" />
                     </div>
-
-                    <!-- <p class="my-4 text-center text-slate-400">
-                        <CopyrightText />
-                    </p> -->
                 </div>
             </nav>
         </div>
@@ -167,8 +149,5 @@
         & a {
             @apply block py-3;
         }
-    }
-    .mobile-sub-link {
-        @apply inline-block text-txt-white px-4 py-2 hocus:outline hocus:outline-primary rounded-md;
     }
 </style>

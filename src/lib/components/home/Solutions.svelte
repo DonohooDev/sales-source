@@ -1,5 +1,5 @@
 <script lang="ts">
-    import DefaultIcon from "../DefaultIcon.svelte";
+    import DefaultIcon from "$lib/components/shared/DefaultIcon.svelte";
 </script>
 
 <section class="solutions">

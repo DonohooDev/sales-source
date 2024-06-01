@@ -1,24 +1,25 @@
 <script lang="ts">
-    import GridBackgroundWrapper from "$lib/components/GridBackgroundWrapper.svelte";
+    import GridBackgroundWrapper from "$lib/components/shared/GridBackgroundWrapper.svelte";
     import MobileImage from "$lib/assets/call-support.png";
-    import DesktopImage from "$lib/assets/call-support-desktop.png";
-    import { enhance } from "$app/forms";
+    // import emailjs from "@emailjs/browser";
 
-    // ts
-    function submitForm(e: Event) {
-        e.preventDefault();
-        console.log("e :>> ", e);
-        // window.grecaptcha.ready(function () {
-        //     grecaptcha.execute("reCAPTCHA_site_key", { action: "submit" }).then(function (token) {
-        //         const form = e.target as HTMLFormElement;
-        //         const formData = new FormData(form);
-        //         const data = Object.fromEntries(formData.entries());
-        //         console.log(data);
-        //     });
-        // });
+    async function handleSubmit(event: Event) {
+        event.preventDefault();
+        const form = event.target as HTMLFormElement;
+        const formData = new FormData(form);
+
+        if (formData.get("misdirection")) {
+            // If our honeypot field is filled out, we know it's a bot
+            return;
+        }
+
+        console.log("formData :>> ", formData);
+        try {
+            // await emailjs.sendForm('service_1z5z5qf', 'template_1z5z5qf', form);
+        } catch (error) {
+            console.log("error :>> ", error);
+        }
     }
-
-    // }
 </script>
 
 <svelte:head>
@@ -31,7 +32,6 @@
         name="keywords"
         content="contact us, sales, sales source, sales source contact, sales source contact us"
     />
-    <script src="https://www.google.com/recaptcha/api.js"></script>
     <meta property="og:title" content="Contact Us" />
     <meta
         property="og:description"
@@ -42,32 +42,18 @@
     <meta property="og:site_name" content="Sales Source" />
     <meta property="og:locale" content="en_US" />
 
-    <script
-        src="https://www.google.com/recaptcha/api.js?render=6LduOu0pAAAAAJNmtufYbta9SPBx2pqhqgXY0hOD"
-    ></script>
-    <!-- <script>
-        function submitForm(e: Event) {
-            e.preventDefault();
-            window.grecaptcha.ready(function () {
-                grecaptcha
-                    .execute("reCAPTCHA_site_key", { action: "submit" })
-                    .then(function (token) {
-                        const form = e.target as HTMLFormElement;
-                        const formData = new FormData(form);
-                        const data = Object.fromEntries(formData.entries());
-                        console.log(data);
-                    });
-            });
-        }
-    </script> -->
-
-    <!-- This script is used to submit the form when the reCAPTCHA is completed -->
-    <script>
-        function onSubmit(token) {
-            console.log("token :>> ", token);
-            document.getElementById("contact-form").submit();
-        }
+    <!-- <script
+        type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    >
     </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init({
+                publicKey: "YOUR_PUBLIC_KEY",
+            });
+        })();
+    </script> -->
 </svelte:head>
 
 <GridBackgroundWrapper>
@@ -86,18 +72,15 @@
                 </p>
             </div>
 
-            <!-- <picture>
-                <source srcset={DesktopImage} media="(min-width: 1024px)" />
-                <img
-                    src={MobileImage}
-                    alt="Message us today!"
-                    class="mx-auto w-[300px] md:w-[500px] xl:w-[700px]"
-                />
-            </picture> -->
             <img src={MobileImage} alt="Message us today!" class="mx-auto lg:w-[500px]" />
         </div>
 
-        <form id="contact-form" class="form content-xs" autocomplete="off">
+        <form
+            id="contact-form"
+            class="form content-xs"
+            on:submit|preventDefault={handleSubmit}
+            autocomplete="off"
+        >
             <div class="grid grid-col grid-cols-1 auto-rows-auto gap-x-6 gap-y-8 sm:grid-cols-2">
                 <div>
                     <label
@@ -164,16 +147,13 @@
                         ></textarea>
                     </div>
                 </div>
+
+                <div>
+                    <input type="text" name="misdirection" class="hidden" />
+                </div>
             </div>
 
-            <button
-                class="g-recaptcha"
-                data-sitekey="6LduOu0pAAAAAJNmtufYbta9SPBx2pqhqgXY0hOD"
-                data-callback="onSubmit"
-                data-action="submit">Submit</button
-            >
-
-            <!-- <button type="submit" class="g-recaptcha"> Submit </button> -->
+            <button type="submit" class="button"> Submit </button>
         </form>
     </section>
 </GridBackgroundWrapper>
@@ -185,7 +165,7 @@
     .form {
     }
 
-    .g-recaptcha {
-        @apply w-full md:w-auto mt-8 text-center px-6 md:px-12 py-3 border border-transparent font-semibold rounded-md text-txt-white bg-secondary hover:bg-primary focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-secondary;
+    .button {
+        @apply w-full md:w-auto mt-4 text-center px-6 md:px-12 py-3 border border-transparent font-semibold rounded-md text-txt-white bg-secondary hover:bg-primary focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-secondary;
     }
 </style>

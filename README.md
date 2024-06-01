@@ -45,3 +45,8 @@ You can preview the production build with `npm run preview`.
 
 #### Embla Carousel Docs
 - https://www.embla-carousel.com/get-started/svelte/
+
+#### EmailJs
+- https://www.emailjs.com/
+- Account Email: example@salessource.com
+- Integrated with ActiveCampaign Postmark for SMTP

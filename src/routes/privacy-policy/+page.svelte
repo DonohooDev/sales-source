@@ -1,5 +1,5 @@
 <script>
-    import GridBackgroundWrapper from "$lib/components/GridBackgroundWrapper.svelte";
+    import GridBackgroundWrapper from "$lib/components/shared/GridBackgroundWrapper.svelte";
 </script>
 
 <svelte:head>

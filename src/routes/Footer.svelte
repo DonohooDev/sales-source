@@ -1,6 +1,6 @@
 <script lang="ts">
     import logo from "$lib/assets/logos/sales-source-logo.png";
-    import CopyrightText from "$lib/components/CopyrightText.svelte";
+    import CopyrightText from "$lib/components/shared/CopyrightText.svelte";
 </script>
 
 <footer>

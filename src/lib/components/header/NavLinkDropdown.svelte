@@ -3,7 +3,7 @@
 
     import { fade } from "svelte/transition";
     import { quintOut } from "svelte/easing";
-    import DefaultIcon from "../DefaultIcon.svelte";
+    import DefaultIcon from "$lib/components/shared/DefaultIcon.svelte";
 
     let isDropdownOpen = false;
 

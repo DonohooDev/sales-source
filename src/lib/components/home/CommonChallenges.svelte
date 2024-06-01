@@ -1,5 +1,5 @@
 <script lang="ts">
-    import DefaultIcon from "$lib/components/DefaultIcon.svelte";
+    import DefaultIcon from "$lib/components/shared/DefaultIcon.svelte";
 </script>
 
 <section class="common-challenges content-lg">
@@ -9,7 +9,7 @@
     <div class="challenges">
         <div class="challenge-card">
             <span>
-                <DefaultIcon classNames="fa-solid fa-timeline text-xl text-3xl" />
+                <DefaultIcon classNames="fa-solid fa-timeline text-xl lg:text-3xl" />
             </span>
             <h3 class="text-h5">Low Pipeline Creation</h3>
             <p>Struggling to generate enough qualified leads.</p>
@@ -18,7 +18,7 @@
         <div class="challenge-card">
             <span>
                 <DefaultIcon
-                    classNames="fa-solid fa-arrow-up-right-dots fa-flip-both text-xl text-3xl"
+                    classNames="fa-solid fa-arrow-up-right-dots fa-flip-both text-xl lg:text-3xl"
                 />
             </span>
             <h3 class="text-h5">Decreasing Conversion Rates</h3>
@@ -27,7 +27,7 @@
 
         <div class="challenge-card">
             <span>
-                <DefaultIcon classNames="fa-solid fa-handcuffs text-xl text-3xl" />
+                <DefaultIcon classNames="fa-solid fa-handcuffs text-xl lg:text-3xl" />
             </span>
             <h3 class="text-h5">Inefficient Inbound Processes</h3>
             <p>Failing to capitalize on incoming leads effectively.</p>
@@ -35,7 +35,7 @@
 
         <div class="challenge-card">
             <span>
-                <DefaultIcon classNames="fa-solid fa-database text-xl text-3xl" />
+                <DefaultIcon classNames="fa-solid fa-database text-xl lg:text-3xl" />
             </span>
             <h3 class="text-h5">Tech Stack Issues</h3>
             <p>Facing operational challenges within your technology stack.</p>
@@ -43,7 +43,7 @@
 
         <div class="challenge-card">
             <span>
-                <DefaultIcon classNames="fa-solid fa-comments-dollar text-xl text-3xl" />
+                <DefaultIcon classNames="fa-solid fa-comments-dollar text-xl lg:text-3xl" />
             </span>
             <h3 class="text-h5">Poor Compensation Plans</h3>
             <p>Struggling with ineffective sales compensation structures.</p>
@@ -51,7 +51,7 @@
 
         <div class="challenge-card">
             <span>
-                <DefaultIcon classNames="fa-solid fa-scale-unbalanced text-xl text-3xl" />
+                <DefaultIcon classNames="fa-solid fa-scale-unbalanced text-xl lg:text-3xl" />
             </span>
             <h3 class="text-h5">Organizational Misalignment</h3>
             <p>

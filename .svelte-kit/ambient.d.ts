@@ -121,6 +121,7 @@ declare module '$env/static/private' {
 	export const VSCODE_GIT_ASKPASS_NODE: string;
 	export const npm_package_devDependencies__types_eslint: string;
 	export const SECURITYSESSIONID: string;
+	export const npm_package_devDependencies__emailjs_browser: string;
 	export const npm_package_devDependencies__sveltejs_adapter_netlify: string;
 	export const npm_package_scripts_check: string;
 	export const COLORTERM: string;
@@ -252,6 +253,7 @@ declare module '$env/dynamic/private' {
 		VSCODE_GIT_ASKPASS_NODE: string;
 		npm_package_devDependencies__types_eslint: string;
 		SECURITYSESSIONID: string;
+		npm_package_devDependencies__emailjs_browser: string;
 		npm_package_devDependencies__sveltejs_adapter_netlify: string;
 		npm_package_scripts_check: string;
 		COLORTERM: string;

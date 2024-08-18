@@ -1,0 +1,158 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+    scroll-behavior: smooth;
+    font-family: "Lato", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variant: normal;
+    scroll-behavior: smooth;
+
+    @apply bg-bg-primary text-txt text-base font-light;
+}
+
+@layer base {
+    h1 {
+        @apply text-4xl md:text-5xl 2xl:text-6xl mb-4 lg:mb-8 font-semibold text-txt-header;
+    }
+
+    h2 {
+        @apply text-3xl md:text-4xl 2xl:text-5xl mb-4 lg:mb-8 font-semibold text-txt-header;
+    }
+
+    h3 {
+        @apply text-2xl md:text-3xl 2xl:text-4xl mb-3 lg:mb-6 font-semibold text-txt-header;
+    }
+
+    h4 {
+        @apply text-xl md:text-2xl 2xl:text-3xl mb-3 lg:mb-6 font-semibold text-txt-header;
+    }
+
+    h5 {
+        @apply text-lg md:text-xl 2xl:text-2xl mb-2 lg:mb-4 font-semibold text-txt-header;
+    }
+
+    h6 {
+        @apply text-base md:text-lg 2xl:text-xl mb-2 lg:mb-4 font-semibold text-txt-header;
+    }
+
+    span {
+        font-weight: inherit;
+        font-family: inherit;
+    }
+
+    a {
+        @apply duration-200 hover:text-secondary;
+    }
+
+    a,
+    p {
+        @apply tracking-wide;
+    }
+
+    picture {
+        @apply block;
+
+        & img {
+            @apply block w-full h-auto;
+        }
+    }
+
+    ol {
+        @apply list-decimal list-inside;
+
+        & li {
+            @apply mb-2;
+
+            &::marker {
+                @apply font-semibold;
+            }
+
+            & > * {
+                @apply inline ml-3;
+            }
+        }
+    }
+
+    section {
+        @apply mb-8 md:mb-12 2xl:mb-16 px-8 md:px-10 lg:px-12 py-12 md:py-16 xl:py-20;
+    }
+
+    footer {
+        @apply py-4 md:py-6 2xl:py-8 px-8 md:px-10 lg:px-12;
+    }
+
+    details summary::-webkit-details-marker,
+    details summary::marker {
+        display: none;
+        content: "";
+    }
+}
+
+@layer components {
+    .text-h1 {
+        @apply text-4xl md:text-5xl 2xl:text-6xl text-txt-header font-semibold;
+    }
+
+    .text-h2 {
+        @apply text-3xl md:text-4xl 2xl:text-5xl text-txt-header font-semibold;
+    }
+
+    .text-h3 {
+        @apply text-2xl md:text-3xl 2xl:text-4xl text-txt-header font-semibold;
+    }
+
+    .text-h4 {
+        @apply text-xl md:text-2xl 2xl:text-3xl text-txt-header font-semibold;
+    }
+
+    .text-h5 {
+        @apply text-lg md:text-xl 2xl:text-2xl text-txt-header font-semibold;
+    }
+
+    .text-h6 {
+        @apply text-base md:text-lg 2xl:text-xl text-txt-header font-semibold;
+    }
+
+    .text-paragraph {
+        @apply mb-3 md:mb-4 2xl:mb-6;
+    }
+
+    .text-subtitle {
+        @apply text-base md:text-lg mb-12 md:mb-16 xl:mb-20 font-normal;
+    }
+
+    .text-subtext {
+        @apply text-sm md:text-base;
+    }
+
+    .content-xs {
+        @apply max-w-2xl mx-auto w-full;
+    }
+
+    .content-sm {
+        @apply max-w-4xl mx-auto w-full;
+    }
+
+    .content-md {
+        @apply max-w-6xl mx-auto w-full;
+    }
+
+    .content-lg {
+        @apply max-w-[1400px] mx-auto w-full;
+    }
+
+    .header-only-section {
+        @apply mb-4 md:mb-8 2xl:mb-10 px-8 md:px-10 lg:px-12 pt-8 md:pt-12;
+
+        & > .text-subtitle {
+            @apply mb-4 md:mb-6 2xl:mb-8;
+        }
+    }
+
+    .section {
+        @apply mb-4 md:mb-8 2xl:mb-10 px-8 md:px-10 lg:px-12 py-8 md:py-12;
+    }
+}

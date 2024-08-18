@@ -1,6 +1,6 @@
 <script>
     import GridBackgroundWrapper from "$lib/components/GridBackgroundWrapper.svelte";
-    import Lars from "$lib/assets/headshots/lars-headshot.webp";
+    import Lars from "$lib/assets/headshots/lars-nilsson.webp";
     import Remington from "$lib/assets/headshots/remington-rawlings.webp";
 </script>
 

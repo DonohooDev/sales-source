@@ -1,6 +1,6 @@
 # Sales Source LLC
 
-[![Netlify Preview Status](https://api.netlify.com/api/v1/badges/fe95252b-254a-4fe1-afcb-f23501069509/deploy-status)](https://app.netlify.com/sites/salessource-preview/deploys) - [![Netlify Production Status](https://api.netlify.com/api/v1/badges/ff57c4a7-bb7f-4f45-b10c-a5ae103c78b9/deploy-status)](https://app.netlify.com/sites/resplendent-flan-55bd1c/deploys)
+[![Netlify Production Status](https://api.netlify.com/api/v1/badges/ff57c4a7-bb7f-4f45-b10c-a5ae103c78b9/deploy-status)](https://app.netlify.com/sites/resplendent-flan-55bd1c/deploys) [![Netlify Preview Status](https://api.netlify.com/api/v1/badges/fe95252b-254a-4fe1-afcb-f23501069509/deploy-status)](https://app.netlify.com/sites/salessource-preview/deploys)
 
 Sales Source is a repository that contains code and resources for the landing page for the company. This application utilizes SvelteKit, Embla Carousel, and EmailJs to create a dynamic and interactive user experience.
 

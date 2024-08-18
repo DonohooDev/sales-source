@@ -8,7 +8,6 @@
     const toggleDropdown = () => {
         setTimeout(() => {
             isDropdownOpen = false;
-            // document.removeEventListener("click", eventListener);
         }, 200);
     };
 </script>

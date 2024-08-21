@@ -7,6 +7,7 @@
     import Solutions from "$lib/components/Solutions.svelte";
     import MobileDashboard from "$lib/assets/homepage.webp";
     import DesktopDashboard from "$lib/assets/homepage.webp";
+    import MainVideo from "$lib/assets/videos/video_main.mp4";
     import { homeChallenges, homeFAQ, homeSolutions } from "./home";
 </script>
 
@@ -78,6 +79,22 @@
         subtitle="Comprehensive strategies to overcome your sales challenges and drive growth."
         cards={homeSolutions}
     />
+
+    <section>
+        <div class="content-md">
+            <header>
+                <h2 class="">The Critical Role of Pipeline in B2B SaaS</h2>
+                <p class="text-subtitle">
+                    Why Regular Audits of Your SDR Team Are Crucial for Predictable Growth
+                </p>
+            </header>
+
+            <video controls disablepictureinpicture loop={false}>
+                <source src={MainVideo} type="video/mp4" />
+                <track kind="captions" />
+            </video>
+        </div>
+    </section>
 
     <FrequentlyAskedQuestions
         questions={homeFAQ}

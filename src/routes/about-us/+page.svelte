@@ -218,7 +218,7 @@
                 </li>
 
                 <li class="metric">
-                    <h3>400K+</h3>
+                    <h3>400+</h3>
                     <p class="text-h6 mb-2">Projects</p>
                     <p class="text-subtext">
                         Strategic projects to help companies adopt new technologies.

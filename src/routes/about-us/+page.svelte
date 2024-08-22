@@ -145,7 +145,7 @@
                 </article>
             </li>
 
-            <li class="team-member">
+            <!-- <li class="team-member">
                 <article>
                     <div class="title">
                         <img
@@ -191,7 +191,7 @@
                         </p>
                     </div>
                 </article>
-            </li>
+            </li> -->
         </ul>
     </section>
 

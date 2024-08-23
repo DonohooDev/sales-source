@@ -50,6 +50,7 @@
                 <NavLink href="/how-we-help/audits" text="Audits" />
                 <NavLink href="/how-we-help/technology" text="Technology" />
             </NavLinkDropdown>
+            <NavLink href="/resources" text="Resources" />
             <NavLink href="/blog" text="Blog" />
         </ul>
 
@@ -108,6 +109,7 @@
                         <MobileNavLink isSubLink href="/how-we-help/audits" text="Audits" />
                         <MobileNavLink isSubLink href="/how-we-help/technology" text="Technology" />
                     </MobileNavLinkDropdown>
+                    <MobileNavLink href="/resources" text="Resources" />
                     <MobileNavLink href="/blog" text="Blog" />
                 </ul>
 

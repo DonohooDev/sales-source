@@ -4,6 +4,7 @@
     // Images
     import BlogSaastrPodcast from "$lib/assets/blog/blog-saastr-podcast.webp";
     import BlogGTMNow from "$lib/assets/blog/blog-gtm-now-article.webp";
+    import Skyline from "$lib/assets/blog/skyline-account-based-sales-development.jpg";
 </script>
 
 <svelte:head>
@@ -36,8 +37,9 @@
 
         <ul class="blog-list">
             <BlogCard
-                title="A New Methodology in Lead Execution, Target Outbound, and
+                title="Account-Based Sales Development: A New Methodology in Lead Execution, Target Outbound, and
                 Pipeline Generation"
+                Image={Skyline}
                 postDate="09-24-2015"
                 href="/blog/a-new-methodology-in-lead-execution-target-outbound-and-pipeline-generation"
             >

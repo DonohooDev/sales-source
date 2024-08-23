@@ -15,8 +15,20 @@
 
         <nav class="footer-nav">
             <ul class="list-none">
-                <p class="font-bold">Resources</p>
+                <p class="font-bold">Company</p>
                 <li><a href="/privacy-policy" class="text-subtext">Privacy Policy</a></li>
+            </ul>
+        </nav>
+
+        <nav class="footer-nav">
+            <ul class="list-none">
+                <p class="font-bold">Resources</p>
+                <li>
+                    <a
+                        href="/blog/4-touch-patterns-for-new-account-based-sales-development-teams#infographic"
+                        class="text-subtext">The Ultimate ABSD Tech Stack</a
+                    >
+                </li>
             </ul>
         </nav>
 
@@ -26,6 +38,7 @@
                 <li><a href="/" class="text-subtext">Home</a></li>
                 <li><a href="/about-us" class="text-subtext">About</a></li>
                 <li><a href="/blog" class="text-subtext">Blog</a></li>
+                <li><a href="/blog" class="text-subtext">Resources</a></li>
                 <li><a href="/contact-us" class="text-subtext">Contact</a></li>
             </ul>
         </nav>

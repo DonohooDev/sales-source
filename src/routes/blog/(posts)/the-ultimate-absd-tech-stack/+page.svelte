@@ -77,17 +77,22 @@
         </section>
 
         <section>
-            <iframe
-                bind:this={frameRef}
-                title="The Ultimate ABSD Tech Stack"
-                style="border: none;"
-                src="https://xd.adobe.com/embed/26f08e90-8d27-424b-5a54-69ff760fe6f3-50c1/?fullscreen&amp;hints=off"
-                width="100%"
-                height="620"
-                frameborder="0"
-                scrolling="no"
-                allow="fullscreen"
-            ></iframe>
+            <div
+                id="infographic"
+                class="relative h-[300px] sm:h-[425px] md:h-[500px] lg:h-[650px] xl:h-[900px]"
+            >
+                <iframe
+                    bind:this={frameRef}
+                    title="The Ultimate ABSD Tech Stack"
+                    style="border: none;"
+                    src="https://xd.adobe.com/embed/26f08e90-8d27-424b-5a54-69ff760fe6f3-50c1/?fullscreen&amp;hints=off"
+                    height="100%"
+                    class="absolute top-0 left-0 w-full h-full xl:w-[130%] xl:-left-[15%]"
+                    frameborder="0"
+                    scrolling="no"
+                    allow="fullscreen"
+                />
+            </div>
             <Button clickHandler={fullScreen} icon="fa-solid fa-expand">View fullscreen</Button>
 
             <h3 id="tech-stack" class="mt-12">Your Account-Based Sales Development Tech Stack</h3>

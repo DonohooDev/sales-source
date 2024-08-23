@@ -13,7 +13,10 @@
 </script>
 
 <svelte:head>
-    <title>A New Methodology in Lead Execution, Target Outbound, and Pipeline Generation</title>
+    <title
+        >Account-Based Sales Development: A New Methodology in Lead Execution, Target Outbound, and
+        Pipeline Generation</title
+    >
     <meta
         name="description"
         content="The best sales development teams today leverage technology to perform smarter, better, and faster. The proliferation of, and advances in, sales technology have presented today’s sales development teams with an opportunity to completely revolutionize the way they conduct business."

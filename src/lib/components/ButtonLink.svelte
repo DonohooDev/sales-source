@@ -1,4 +1,7 @@
 <script lang="ts">
+    import type { SvelteHTMLElements } from "svelte/elements";
+    type $$restProps = SvelteHTMLElements["a"];
+
     export let href: string;
     export let size: "sm" | "md" | "lg" = "md";
     export let btnText: string;
@@ -37,7 +40,7 @@
     }
 </script>
 
-<a class={className} {href}>
+<a class={className} {href} {...$$restProps}>
     {#if icon}
         <span class="mr-3 lg:mr-5">
             <i class={icon} />

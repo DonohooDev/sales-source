@@ -18,7 +18,9 @@
 </script>
 
 <svelte:head>
-    <title>4 Touch Patterns for New Account Based Sales Development Teams | SalesSource</title>
+    <title
+        >4 Must-Have Touch Patterns for New Account-Based Sales Development Teams | SalesSource</title
+    >
     <meta
         name="description"
         content="Learn essential touch patterns for new ABSD teams, emphasizing the importance of personalizing communication based on account potential and lead source."
@@ -43,7 +45,7 @@
 
 <BlogPostWrapper postDate="06-26-2020" author="Brendan Short" {postContents}>
     <h1 id="introduction" slot="title">
-        4 Touch Patterns for New Account Based Sales Development Teams
+        4 Must-Have Touch Patterns for New Account-Based Sales Development Teams
     </h1>
 
     <p slot="intro">
@@ -123,17 +125,24 @@
                 We encourage you to click around, explore the comments and best practices, and
                 experiment with these touch patterns in your sales engagement tool.
             </p>
-            <iframe
-                bind:this={frameRef}
-                title="touch-patterns-interactive-infographic"
-                style="border: none;"
-                src="https://xd.adobe.com/embed/a2c23c24-a331-4229-828c-ddab56cdaab4-f791/?fullscreen&amp;hints=off"
-                width="100%"
-                height="700"
-                frameborder="0"
-                scrolling="no"
-                allow="fullscreen"
-            ></iframe>
+
+            <div
+                id="infographic"
+                class="relative h-[300px] sm:h-[425px] md:h-[500px] lg:h-[650px] xl:h-[900px]"
+            >
+                <iframe
+                    bind:this={frameRef}
+                    title="touch-patterns-interactive-infographic"
+                    style="border: none;"
+                    src="https://xd.adobe.com/embed/a2c23c24-a331-4229-828c-ddab56cdaab4-f791/?fullscreen&amp;hints=off"
+                    height="100%"
+                    class="absolute top-0 left-0 w-full h-full xl:w-[130%] xl:-left-[15%]"
+                    frameborder="0"
+                    scrolling="no"
+                    allow="fullscreen"
+                />
+            </div>
+
             <Button clickHandler={fullScreen} icon="fa-solid fa-expand">View fullscreen</Button>
         </section>
 

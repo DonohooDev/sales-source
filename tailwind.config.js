@@ -62,8 +62,189 @@ export default {
         },
     },
     plugins: [
-        plugin(function ({ addVariant }) {
+        plugin(function ({ addComponents, addVariant, theme }) {
             addVariant("hocus", ["&:hover", "&:focus"]);
+            addComponents({
+                ".text-h1": {
+                    "fontSize": theme("fontSize.4xl"),
+                    "@screen md": {
+                        fontSize: theme("fontSize.5xl"),
+                    },
+                    "@screen 2xl": {
+                        fontSize: theme("fontSize.6xl"),
+                    },
+                    "color": theme("colors.txt-header"),
+                    "fontWeight": theme("fontWeight.semibold"),
+                },
+
+                ".text-h2": {
+                    "fontSize": theme("fontSize.3xl"),
+                    "@screen md": {
+                        fontSize: theme("fontSize.4xl"),
+                    },
+                    "@screen 2xl": {
+                        fontSize: theme("fontSize.5xl"),
+                    },
+                    "color": theme("colors.txt-header"),
+                    "fontWeight": theme("fontWeight.semibold"),
+                },
+
+                ".text-h3": {
+                    "fontSize": theme("fontSize.2xl"),
+                    "@screen md": {
+                        fontSize: theme("fontSize.3xl"),
+                    },
+                    "@screen 2xl": {
+                        fontSize: theme("fontSize.4xl"),
+                    },
+                    "color": theme("colors.txt-header"),
+                    "fontWeight": theme("fontWeight.semibold"),
+                },
+
+                ".text-h4": {
+                    "fontSize": theme("fontSize.xl"),
+                    "@screen md": {
+                        fontSize: theme("fontSize.2xl"),
+                    },
+                    "@screen 2xl": {
+                        fontSize: theme("fontSize.3xl"),
+                    },
+                    "color": theme("colors.txt-header"),
+                    "fontWeight": theme("fontWeight.semibold"),
+                },
+
+                ".text-h5": {
+                    "fontSize": theme("fontSize.lg"),
+                    "@screen md": {
+                        fontSize: theme("fontSize.xl"),
+                    },
+                    "@screen 2xl": {
+                        fontSize: theme("fontSize.2xl"),
+                    },
+                    "color": theme("colors.txt-header"),
+                    "fontWeight": theme("fontWeight.semibold"),
+                },
+
+                ".text-h6": {
+                    "fontSize": theme("fontSize.base"),
+                    "@screen md": {
+                        fontSize: theme("fontSize.lg"),
+                    },
+                    "@screen 2xl": {
+                        fontSize: theme("fontSize.xl"),
+                    },
+                    "color": theme("colors.txt-header"),
+                    "fontWeight": theme("fontWeight.semibold"),
+                },
+
+                ".text-paragraph": {
+                    "marginBottom": theme("spacing.3"),
+                    "@screen md": {
+                        marginBottom: theme("spacing.4"),
+                    },
+                    "@screen 2xl": {
+                        marginBottom: theme("spacing.6"),
+                    },
+                },
+
+                ".text-subtitle": {
+                    "fontSize": theme("fontSize.base"),
+                    "@screen md": {
+                        fontSize: theme("fontSize.lg"),
+                    },
+                    "marginBottom": theme("spacing.12"),
+                    "@screen xl": {
+                        marginBottom: theme("spacing.20"),
+                    },
+                    "fontWeight": theme("fontWeight.normal"),
+                },
+
+                ".text-subtext": {
+                    "fontSize": theme("fontSize.sm"),
+                    "@screen md": {
+                        fontSize: theme("fontSize.base"),
+                    },
+                },
+
+                ".content-xs": {
+                    maxWidth: theme("maxWidth.2xl"),
+                    marginLeft: "auto",
+                    marginRight: "auto",
+                    width: "100%",
+                },
+
+                ".content-sm": {
+                    maxWidth: theme("maxWidth.4xl"),
+                    marginLeft: "auto",
+                    marginRight: "auto",
+                    width: "100%",
+                },
+
+                ".content-md": {
+                    maxWidth: theme("maxWidth.6xl"),
+                    marginLeft: "auto",
+                    marginRight: "auto",
+                    width: "100%",
+                },
+
+                ".content-lg": {
+                    maxWidth: "1400px",
+                    marginLeft: "auto",
+                    marginRight: "auto",
+                    width: "100%",
+                },
+
+                ".header-only-section": {
+                    "marginBottom": theme("spacing.4"),
+                    "@screen md": {
+                        marginBottom: theme("spacing.8"),
+                    },
+                    "@screen 2xl": {
+                        marginBottom: theme("spacing.10"),
+                    },
+                    "paddingTop": theme("spacing.8"),
+                    "@screen md": {
+                        paddingTop: theme("spacing.12"),
+                    },
+                    "paddingLeft": theme("spacing.8"),
+                    "paddingRight": theme("spacing.8"),
+                    "@screen lg": {
+                        paddingLeft: theme("spacing.12"),
+                        paddingRight: theme("spacing.12"),
+                    },
+                    "& > .text-subtitle": {
+                        "marginBottom": theme("spacing.4"),
+                        "@screen md": {
+                            marginBottom: theme("spacing.6"),
+                        },
+                        "@screen 2xl": {
+                            marginBottom: theme("spacing.8"),
+                        },
+                    },
+                },
+
+                ".section": {
+                    "marginBottom": theme("spacing.4"),
+                    "@screen md": {
+                        marginBottom: theme("spacing.8"),
+                    },
+                    "@screen 2xl": {
+                        marginBottom: theme("spacing.10"),
+                    },
+                    "paddingTop": theme("spacing.8"),
+                    "paddingBottom": theme("spacing.8"),
+                    "@screen md": {
+                        paddingTop: theme("spacing.12"),
+                        paddingBottom: theme("spacing.12"),
+                    },
+                    "paddingLeft": theme("spacing.8"),
+                    "paddingRight": theme("spacing.8"),
+                    "@screen lg": {
+                        paddingLeft: theme("spacing.12"),
+                        paddingRight: theme("spacing.12"),
+                    },
+                },
+            });
         }),
     ],
 };

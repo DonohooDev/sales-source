@@ -4,7 +4,6 @@
     import HomeBridge from "$lib/assets/home-bridge.jpg";
     import Skyline from "$lib/assets/blog/skyline-account-based-sales-development.jpg";
     import ButtonLink from "$lib/components/ButtonLink.svelte";
-    import DefaultIcon from "$lib/components/DefaultIcon.svelte";
 </script>
 
 <svelte:head></svelte:head>
@@ -23,13 +22,11 @@
 
         <ul class="resources">
             <li class="resource">
-                <!-- <DefaultIcon
-                    white
-                    classNames="text-[125px] md:text-[150px] lg:text-[185px] fa-regular fa-tools rounded-md bg-secondary p-8"
-                /> -->
                 <img
                     src={Skyline}
                     alt="The Ultimate ABSD Tech Stack"
+                    width="350"
+                    height="350"
                     class="rounded-md bg-secondary p-1 w-full object-cover object-top lg:max-w-[300px]"
                 />
                 <div class="resource-content">
@@ -51,6 +48,8 @@
             <li class="resource resource-reverse">
                 <img
                     src={HomeBridge}
+                    width="600"
+                    height="400"
                     alt="4 Must-Have Touch Patterns for New Account-Based Sales Development Teams"
                     class="rounded-md bg-secondary p-1 w-full object-cover object-top lg:max-w-[400px]"
                 />
@@ -74,6 +73,9 @@
             <li class="resource">
                 <img
                     src={ABSDFlowchart}
+                    width="1875"
+                    height="4811"
+                    loading="lazy"
                     alt="Account-Based Sales Development Flowchart"
                     class="rounded-md bg-secondary p-1 w-[500px] object-cover object-top max-h-[375px]"
                 />

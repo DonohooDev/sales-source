@@ -48,11 +48,12 @@
                 </div>
             </li>
 
-            <li class="resource">
-                <!-- <DefaultIcon
-                    white
-                    classNames="text-[125px] md:text-[150px] fa-regular fa-handshake rounded-md bg-secondary p-8"
-                /> -->
+            <li class="resource resource-reverse">
+                <img
+                    src={HomeBridge}
+                    alt="4 Must-Have Touch Patterns for New Account-Based Sales Development Teams"
+                    class="rounded-md bg-secondary p-1 w-full object-cover object-top lg:max-w-[400px]"
+                />
                 <div class="resource-content">
                     <h2>
                         4 Must-Have Touch Patterns for New Account-Based Sales Development Teams
@@ -68,18 +69,9 @@
                         btnType="outlined"
                     />
                 </div>
-                <img
-                    src={HomeBridge}
-                    alt="4 Must-Have Touch Patterns for New Account-Based Sales Development Teams"
-                    class="rounded-md bg-secondary p-1 w-full object-cover object-top lg:max-w-[400px]"
-                />
             </li>
 
             <li class="resource">
-                <!-- <DefaultIcon
-                    white
-                    classNames="text-[125px] md:text-[150px] fa-regular fa-tasks rounded-md bg-secondary p-8"
-                /> -->
                 <img
                     src={ABSDFlowchart}
                     alt="Account-Based Sales Development Flowchart"
@@ -112,27 +104,13 @@
 
                     <ButtonLink
                         href={ABSDFlowchartDownload}
-                        download
+                        download="absd-full-flowchart.pdf"
                         rel="noopener noreferrer"
                         btnText="Download flow chart"
                         size="sm"
                     />
                 </div>
             </li>
-
-            <!-- <BlogCard
-                title="Targeting the Big Guys: Account Based Sales Development "
-                href="https://www.linkedin.com/pulse/ai-replace-sales-development-give-us-superpowers-lars-nilsson/"
-                postDate="07-07-2017"
-            >
-                <p slot="preview">
-                    Account-based sales development is the hot new thing with promises of finding
-                    targeted leads and pushing your sales performance to levels to dramatically
-                    greater heights. That all sounds fabulous, but since we all know execution is
-                    everything, you need the nitty gritty details on how to integrate ABSD into your
-                    sales process. Fret not, in this session we’ve got you covered.
-                </p>
-            </BlogCard> -->
         </ul>
     </section>
 </div>
@@ -143,6 +121,10 @@
 
         & > .resource {
             @apply flex flex-col lg:flex-row gap-4 lg:gap-12 xl:gap-16 max-w-[450px] lg:max-w-[1000px] mx-auto bg-bg-contrast rounded-md p-8;
+
+            &.resource-reverse {
+                @apply lg:flex-row-reverse;
+            }
 
             & > .resource-content {
                 @apply flex flex-col gap-4 mt-4;

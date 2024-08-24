@@ -99,6 +99,7 @@
             <p>
                 <strong>Want to download a PDF of this flow chart?</strong>&nbsp;<a
                     href={ABSDFlowchartDownload}
+                    download="absd-full-flowchart.pdf"
                     target="_blank"
                     rel="noopener noreferrer">Click here</a
                 >

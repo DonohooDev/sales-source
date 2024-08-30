@@ -1,71 +1,48 @@
 <script lang="ts">
     import ABSDFlowchart from "$lib/assets/absd-full-flowchart.png";
     import ABSDFlowchartDownload from "$lib/assets/absd-full-flowchart.pdf";
-    import HomeBridge from "$lib/assets/home-bridge.jpg";
-    import Skyline from "$lib/assets/blog/skyline-account-based-sales-development.jpg";
+    import ResourceBackground from "$lib/assets/resource-background.png";
     import ButtonLink from "$lib/components/ButtonLink.svelte";
 </script>
 
 <svelte:head></svelte:head>
 
-<div class="content-lg">
+<div class="content-md">
     <section>
         <header>
             <h1>Resources</h1>
-            <p class="text-subtitle max-w-[1000px]">
-                Our world’s leading advisory and consulting firm for strategic account-based sales
-                development's go to resources at your fingertips to help you revolutionize your
-                sales strategy. We provide cutting-edge technology and expert guidance to help you
-                in your journey.
-            </p>
+            <p class="text-subtitle" />
         </header>
 
         <ul class="resources">
             <li class="resource">
-                <img
-                    src={Skyline}
-                    alt="The Ultimate ABSD Tech Stack"
-                    width="350"
-                    height="350"
-                    class="rounded-md bg-secondary p-1 w-full object-cover object-top lg:max-w-[300px]"
-                />
-                <div class="resource-content">
-                    <h2>The Ultimate ABSD Tech Stack</h2>
-                    <p>
-                        The Ultimate ABSD Tech Stack is a comprehensive guide to the tools and
-                        technologies that will help you build a successful account-based sales
-                        development strategy. See the full infographic in action below.
-                    </p>
-                    <ButtonLink
-                        href="/blog/the-ultimate-absd-tech-stack#infographic"
-                        btnText="View Infographic"
-                        size="sm"
-                        btnType="outlined"
-                    />
+                <div class="image">
+                    <p>4 Must-Have Touch Patterns For New ABSD Teams</p>
                 </div>
-            </li>
-
-            <li class="resource resource-reverse">
-                <img
-                    src={HomeBridge}
-                    width="600"
-                    height="400"
-                    alt="4 Must-Have Touch Patterns for New Account-Based Sales Development Teams"
-                    class="rounded-md bg-secondary p-1 w-full object-cover object-top lg:max-w-[400px]"
-                />
                 <div class="resource-content">
                     <h2>
                         4 Must-Have Touch Patterns for New Account-Based Sales Development Teams
                     </h2>
-                    <p>
-                        The 4 must-have touch patterns for new account-based sales development teams
-                        to help you build a successful account-based sales development strategy.
-                    </p>
                     <ButtonLink
                         href="/blog/4-touch-patterns-for-new-account-based-sales-development-teams#infographic"
                         btnText="View Infographic"
                         size="sm"
-                        btnType="outlined"
+                        class="w-full md:max-w-[250px]"
+                    />
+                </div>
+            </li>
+
+            <li class="resource">
+                <div class="image">
+                    <p>The Ultimate ABSD Tech Stack</p>
+                </div>
+                <div class="resource-content">
+                    <h2>Interactive Infographic: The Ultimate ABSD Tech Stack</h2>
+                    <ButtonLink
+                        href="/blog/the-ultimate-absd-tech-stack#infographic"
+                        btnText="View Infographic"
+                        size="sm"
+                        class="w-full md:max-w-[250px]"
                     />
                 </div>
             </li>
@@ -77,7 +54,7 @@
                     height="4811"
                     loading="lazy"
                     alt="Account-Based Sales Development Flowchart"
-                    class="rounded-md bg-secondary p-1 w-[500px] object-cover object-top max-h-[375px]"
+                    class="max-w-[322px] max-h-[500px] object-cover object-top"
                 />
                 <div class="resource-content">
                     <h2>Are you ready for an Account-Based Sales Development Model?</h2>
@@ -109,6 +86,7 @@
                         download="absd-full-flowchart.pdf"
                         rel="noopener noreferrer"
                         btnText="Download flow chart"
+                        class="max-w-[250px] mt-4"
                         size="sm"
                     />
                 </div>
@@ -119,24 +97,24 @@
 
 <style type="postcss">
     .resources {
-        @apply grid grid-cols-1 gap-8 lg:gap-12 xl:gap-20 items-center;
+        @apply grid grid-cols-1 gap-8 items-center;
 
         & > .resource {
-            @apply flex flex-col lg:flex-row gap-4 lg:gap-12 xl:gap-16 max-w-[450px] lg:max-w-[1000px] mx-auto bg-bg-contrast rounded-md p-8;
+            @apply flex flex-col lg:flex-row gap-4 lg:gap-12 xl:gap-16 mx-auto rounded-md p-8 w-full bg-bg-soft;
 
-            &.resource-reverse {
-                @apply lg:flex-row-reverse;
+            & > .image {
+                @apply bg-[url('$lib/assets/resource-background.png')] bg-no-repeat max-w-[300px] mx-auto h-[385px] flex items-center justify-center bg-cover;
+
+                & > p {
+                    @apply w-[300px] p-4 lg:p-8 text-h4 text-center text-txt-white tracking-wider leading-tight font-normal;
+                }
             }
 
             & > .resource-content {
-                @apply flex flex-col gap-4 mt-4;
+                @apply flex flex-col gap-4 mt-4 w-full justify-center;
 
                 & > h2 {
-                    @apply text-h4 mb-0;
-                }
-
-                & > p {
-                    @apply mb-2 lg:mb-4 flex-1;
+                    @apply text-h4;
                 }
             }
         }

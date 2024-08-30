@@ -2,7 +2,6 @@
     import type { SvelteHTMLElements } from "svelte/elements";
     type $$restProps = SvelteHTMLElements["a"];
 
-    export let href: string;
     export let size: "sm" | "md" | "lg" = "md";
     export let btnText: string;
     export let icon = "";
@@ -18,20 +17,20 @@
     const textClasses =
         "text-secondary bg-transparent border-transparent hover:border-disabled hover:bg-bg-contrast";
 
-    let className = "";
+    let classes = "";
     $: {
         switch (btnType) {
             case "primary":
-                className = `${sharedClasses} ${primaryClasses}`;
+                classes = `${sharedClasses} ${primaryClasses}`;
                 break;
             case "inverted":
-                className = `${sharedClasses} ${invertedClasses}`;
+                classes = `${sharedClasses} ${invertedClasses}`;
                 break;
             case "text":
-                className = `${sharedClasses} ${textClasses}`;
+                classes = `${sharedClasses} ${textClasses}`;
                 break;
             case "outlined":
-                className = `${sharedClasses} ${outlinedClasses}`;
+                classes = `${sharedClasses} ${outlinedClasses}`;
                 break;
 
             default:
@@ -40,7 +39,7 @@
     }
 </script>
 
-<a class={className} {href} {...$$restProps}>
+<a {...$$restProps} href={$$restProps.href} class={`${classes} ${$$restProps.class}`}>
     {#if icon}
         <span class="mr-3 lg:mr-5">
             <i class={icon} />

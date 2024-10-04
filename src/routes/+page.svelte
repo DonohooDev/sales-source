@@ -11,26 +11,7 @@
     import { homeChallenges, homeFAQ, homeSolutions } from "./home";
 </script>
 
-<svelte:head>
-    <title>Modernize GTM Strategy to Increase Pipeline | SalesSource</title>
-    <meta
-        name="description"
-        content="Revolutionize your sales strategy with cutting-edge technology and expert guidance."
-    />
-    <meta
-        name="keywords"
-        content="sales strategy, pipeline creation, technology, expert guidance"
-    />
-    <meta property="og:title" content="Modernize GTM Strategy to Increase Pipeline" />
-    <meta
-        property="og:description"
-        content="The world’s leading advisory and consulting firm for strategic account-based sales development"
-    />
-    <meta property="og:url" content="https://salessource.com" />
-    <meta property="og:type" content="website" />
-    <meta property="og:site_name" content="Sales Source" />
-    <meta property="og:locale" content="en_US" />
-</svelte:head>
+<!-- Meta handled in the main app.html file -->
 
 <GridBackgroundWrapper>
     <section class="text-center content-lg">

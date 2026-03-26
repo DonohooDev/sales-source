@@ -7,19 +7,49 @@
     import NavLink from "$lib/components/header/NavLink.svelte";
     import NavLinkDropdown from "$lib/components/header/NavLinkDropdown.svelte";
     import MobileNavLinkDropdown from "$lib/components/header/MobileNavLinkDropdown.svelte";
-    import { setContext } from "svelte";
+    import { setContext, tick } from "svelte";
     import type { HeaderContext } from "../types/context/header";
     import MobileNavLink from "$lib/components/header/MobileNavLink.svelte";
 
     let isMenuOpen = false;
+    let mobileNavEl: HTMLElement | null = null;
 
-    function toggleMenu(newState?: boolean) {
+    async function toggleMenu(newState?: boolean) {
         isMenuOpen = newState !== undefined ? newState : !isMenuOpen;
+        if (isMenuOpen) {
+            await tick();
+            const firstFocusable = mobileNavEl?.querySelector<HTMLElement>(
+                "a, button, [tabindex]"
+            );
+            firstFocusable?.focus();
+        }
+    }
+
+    function handleFocusTrap(e: KeyboardEvent) {
+        if (e.key === "Escape") {
+            toggleMenu(false);
+            return;
+        }
+        if (e.key !== "Tab" || !mobileNavEl) return;
+        const focusable = mobileNavEl.querySelectorAll<HTMLElement>(
+            "a, button, [tabindex]:not([tabindex='-1'])"
+        );
+        if (!focusable.length) return;
+        const first = focusable[0];
+        const last = focusable[focusable.length - 1];
+        if (e.shiftKey && document.activeElement === first) {
+            e.preventDefault();
+            last.focus();
+        } else if (!e.shiftKey && document.activeElement === last) {
+            e.preventDefault();
+            first.focus();
+        }
     }
 
     setContext<HeaderContext>("header", { toggleMenu });
 </script>
 
+<a href="#main" class="skip-link">Skip to content</a>
 <header>
     <!-- Main Nav -->
     <nav class="desktop-nav content-lg">
@@ -29,7 +59,7 @@
 
         <!-- Hamburger Menu -->
         <div class="hamburger">
-            <button on:click={() => toggleMenu()}>
+            <button on:click={() => toggleMenu()} aria-expanded={isMenuOpen}>
                 <Menu size={24} color="#f9f9f9" />
             </button>
         </div>
@@ -64,15 +94,19 @@
         <!-- Mobile Menu -->
         <div class="relative z-50">
             <!-- Backdrop -->
+            <!-- svelte-ignore a11y-click-events-have-key-events -->
+            <!-- svelte-ignore a11y-no-static-element-interactions -->
             <div
                 class="mobile-backdrop"
-                aria-hidden
-                aria-label="close mobile menu"
+                aria-hidden="true"
                 on:click={() => toggleMenu()}
             />
 
             <!-- Menu Content -->
+            <!-- svelte-ignore a11y-no-noninteractive-element-interactions -->
             <nav
+                bind:this={mobileNavEl}
+                on:keydown={handleFocusTrap}
                 transition:slide={{ duration: 300, delay: 100, easing: quintOut, axis: "x" }}
                 class="mobile-nav"
             >
@@ -127,6 +161,13 @@
 </header>
 
 <style lang="postcss">
+    .skip-link {
+        @apply absolute -top-10 left-4 bg-bg-primary text-primary px-4 py-2 z-[100] rounded-md font-semibold;
+        transition: top 0.2s;
+    }
+    .skip-link:focus {
+        @apply top-2;
+    }
     header {
         @apply bg-primary;
     }

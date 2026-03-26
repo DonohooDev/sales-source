@@ -14,9 +14,10 @@
       "Bash(git push)",
       "Bash(git reset --hard*)",
       "Bash(npm install*)",
+      "Bash(pnpm install*)",
       "Bash(pip install*)",
       "Bash(docker *)"
     ],
-    "allow": ["WebFetch", "WebSearch", "Glob", "Grep", "mcp__MCP_DOCKER__*"]
+    "allow": ["Read", "Edit", "Write", "Bash", "WebFetch", "WebSearch", "Glob", "Grep", "mcp__MCP_DOCKER__*"]
   }
 }

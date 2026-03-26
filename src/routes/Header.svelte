@@ -161,8 +161,9 @@
 </header>
 
 <style lang="postcss">
+    @reference "../app.css";
     .skip-link {
-        @apply absolute -top-10 left-4 bg-bg-primary text-primary px-4 py-2 z-[100] rounded-md font-semibold;
+        @apply absolute -top-10 left-4 bg-bg-primary text-primary px-4 py-2 z-100 rounded-md font-semibold;
         transition: top 0.2s;
     }
     .skip-link:focus {

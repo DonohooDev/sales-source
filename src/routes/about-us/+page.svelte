@@ -246,6 +246,7 @@
 </GridBackgroundWrapper>
 
 <style lang="postcss">
+    @reference "../../app.css";
     .team-list {
         @apply flex flex-col justify-center gap-14;
     }

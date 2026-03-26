@@ -117,6 +117,7 @@
 </section>
 
 <style type="postcss">
+    @reference "../../../app.css";
     .companies-carousel {
         @apply relative bg-bg-soft;
     }

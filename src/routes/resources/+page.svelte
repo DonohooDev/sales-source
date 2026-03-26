@@ -116,6 +116,7 @@
 </div>
 
 <style type="postcss">
+    @reference "../../app.css";
     .resources {
         @apply grid grid-cols-1 gap-8 items-center;
 

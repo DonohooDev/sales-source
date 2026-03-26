@@ -31,6 +31,7 @@
 </li>
 
 <style type="postcss">
+    @reference "../../app.css";
     li {
         @apply mb-8 border border-solid border-disabled rounded-md p-6 shadow-md bg-bg-soft;
 

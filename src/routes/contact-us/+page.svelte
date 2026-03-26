@@ -78,8 +78,9 @@
 </GridBackgroundWrapper>
 
 <style lang="postcss">
+    @reference "../../app.css";
 	.cta-card {
-		@apply grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-12 bg-bg-soft rounded-md shadow-sm p-6 lg:p-10;
+		@apply grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-12 bg-bg-soft rounded-md shadow-xs p-6 lg:p-10;
 	}
 
 	.cta-image {

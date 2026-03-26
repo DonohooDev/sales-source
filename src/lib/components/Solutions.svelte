@@ -38,6 +38,7 @@
 </section>
 
 <style lang="postcss">
+    @reference "../../app.css";
     .solutions {
         @apply bg-bg-contrast;
     }

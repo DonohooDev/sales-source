@@ -84,6 +84,7 @@
 </article>
 
 <style lang="postcss">
+    @reference "../../../app.css";
     :global(.blog-content) {
         & p {
             @apply mb-3 md:mb-4 2xl:mb-6;

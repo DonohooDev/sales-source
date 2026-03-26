@@ -64,6 +64,7 @@
 </footer>
 
 <style lang="postcss">
+    @reference "../app.css";
     footer {
         @apply bg-primary text-txt-white;
     }

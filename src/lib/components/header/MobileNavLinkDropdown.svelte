@@ -7,10 +7,10 @@
 <li class="mobile-dropdown">
     <details
         name="mobile-nav-dropdown"
-        class="rounded-md bg-primary p-4 hocus:outline hocus:outline-primary hocus:bg-bg-primary hocus:text-primary"
+        class="rounded-md bg-primary p-4 hocus:outline-solid hocus:outline-primary hocus:bg-bg-primary hocus:text-primary"
     >
         <summary
-            class="focus:outline-none cursor-pointer flex justify-between items-center text-txt-white"
+            class="focus:outline-hidden cursor-pointer flex justify-between items-center text-txt-white"
         >
             <span>{menuName}</span>
             <span class="transition-transform ease">
@@ -25,6 +25,7 @@
 </li>
 
 <style lang="postcss">
+    @reference "../../../app.css";
     details:hover summary {
         @apply text-primary;
     }

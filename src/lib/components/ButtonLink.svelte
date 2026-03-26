@@ -8,7 +8,7 @@
     export let icon: ComponentType | null = null;
     export let btnType: "primary" | "inverted" | "text" | "outlined" = "primary";
 
-    const sharedClasses = `flex justify-around items-center ${size === "lg" ? "px-8 py-3 text-lg" : size === "md" ? "px-6 py-3 text-base" : "px-5 py-2 text-base"} text-center border border-solid rounded-md whitespace-nowrap transition-colors duration-300 ease-in-out hover:shadow-sm`;
+    const sharedClasses = `flex justify-around items-center ${size === "lg" ? "px-8 py-3 text-lg" : size === "md" ? "px-6 py-3 text-base" : "px-5 py-2 text-base"} text-center border border-solid rounded-md whitespace-nowrap transition-colors duration-300 ease-in-out hover:shadow-xs`;
     const invertedClasses =
         "text-secondary bg-bg-primary hover:bg-secondary hover:text-txt-white border-secondary";
     const primaryClasses =

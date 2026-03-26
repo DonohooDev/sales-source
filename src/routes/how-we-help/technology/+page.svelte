@@ -236,6 +236,7 @@
 </GridBackgroundWrapper>
 
 <style type="postcss">
+    @reference "../../../app.css";
     .improvement {
         @apply mt-8 md:mt-12 2xl:mt-20 flex flex-col lg:grid lg:grid-cols-5 lg:gap-8 items-center;
 

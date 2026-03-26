@@ -6,7 +6,7 @@
     export let clickHandler: () => void;
 
     const sharedClasses =
-        "block px-6 py-2 text-base text-center border border-solid rounded-md whitespace-nowrap transition-colors duration-300 ease-in-out hover:shadow-sm";
+        "block px-6 py-2 text-base text-center border border-solid rounded-md whitespace-nowrap transition-colors duration-300 ease-in-out hover:shadow-xs";
     const invertedClasses =
         "text-secondary bg-bg-primary hover:bg-secondary hover:text-txt-white border-secondary";
     const primaryClasses =

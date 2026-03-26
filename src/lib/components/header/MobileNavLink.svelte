@@ -12,11 +12,12 @@
 <li><a {href} class:isSubLink on:click={() => toggleMenu(false)}>{text}</a></li>
 
 <style lang="postcss">
+    @reference "../../../app.css";
     a {
-        @apply inline-block text-txt-white px-4 py-2 hocus:text-primary hocus:outline hocus:outline-primary hocus:bg-bg-primary rounded-md;
+        @apply inline-block text-txt-white px-4 py-2 hocus:text-primary hocus:outline-solid hocus:outline-primary hocus:bg-bg-primary rounded-md;
     }
 
     .isSubLink {
-        @apply inline-block text-txt-white px-4 py-2 outline-transparent hocus:outline hocus:outline-primary rounded-md;
+        @apply inline-block text-txt-white px-4 py-2 outline-transparent hocus:outline-solid hocus:outline-primary rounded-md;
     }
 </style>

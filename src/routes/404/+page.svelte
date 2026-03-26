@@ -1,6 +1,7 @@
 <script lang="ts">
     import GridBackgroundWrapper from "$lib/components/GridBackgroundWrapper.svelte";
     import ButtonLink from "$lib/components/ButtonLink.svelte";
+    import { House } from "lucide-svelte";
 </script>
 
 <svelte:head>
@@ -31,7 +32,7 @@
 
         <div class="w-full my-14 lg:my-20">
             <span class="inline-block">
-                <ButtonLink href="/" btnText="Go Home" icon="fa-light fa-home text-lg" />
+                <ButtonLink href="/" btnText="Go Home" icon={House} />
             </span>
         </div>
     </section>

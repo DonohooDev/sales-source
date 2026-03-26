@@ -2,6 +2,7 @@
     import GridBackgroundWrapper from "$lib/components/GridBackgroundWrapper.svelte";
     import ContactUs from "$lib/assets/contact-us.svg";
     import emailjs from "@emailjs/browser";
+    import { LoaderCircle } from "lucide-svelte";
 
     let isSending = false;
 
@@ -176,7 +177,7 @@
                 ><span
                     class:hidden={!isSending}
                     class="absolute left-0 inset-y-0 flex items-center pl-5"
-                    ><i class="fa-solid fa-spinner fa-spin" /></span
+                    ><LoaderCircle size={20} class="animate-spin" /></span
                 > Submit
             </button>
         </form>

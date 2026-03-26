@@ -1,5 +1,4 @@
 <script lang="ts">
-    import DefaultIcon from "$lib/components/DefaultIcon.svelte";
     import type { Challenge } from "../../../types/challenge";
 
     export let title: string;
@@ -20,7 +19,7 @@
         {#each challenges as challenge}
             <li class="challenge-card">
                 <span>
-                    <DefaultIcon white classNames="{challenge.icon} text-xl lg:text-[26px]" />
+                    <svelte:component this={challenge.icon} size={24} color="#f9f9f9" class="lg:w-[26px] lg:h-[26px]" />
                 </span>
                 <h3 class="text-h5">{challenge.title}</h3>
                 <p>

@@ -1,5 +1,7 @@
+import type { ComponentType } from "svelte";
+
 export type SolutionCard = {
-    icon: string;
+    icon: ComponentType;
     title: string;
     subtitle: string;
     bullets: string[];

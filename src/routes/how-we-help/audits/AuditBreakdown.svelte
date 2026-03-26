@@ -1,4 +1,5 @@
 <script lang="ts">
+    import { UserCheck, BarChart, GitCompare, CalendarCheck } from "lucide-svelte";
 </script>
 
 <section class="content-md">
@@ -11,7 +12,7 @@
         <div class="steps-content">
             <div class="step">
                 <span class="step-icon">
-                    <i class="fa-sharp fa-user-ninja text-[2rem] md:text-[2.5rem] text-secondary" />
+                    <UserCheck size={32} class="md:w-10 md:h-10 text-secondary" />
                 </span>
                 <h3 class="text-h6">Initial Assessment</h3>
                 <p class="text-subtext">
@@ -21,9 +22,7 @@
 
             <div class="step">
                 <span class="step-icon">
-                    <i
-                        class="fa-sharp fa-chart-mixed text-[2rem] md:text-[2.5rem] text-secondary"
-                    />
+                    <BarChart size={32} class="md:w-10 md:h-10 text-secondary" />
                 </span>
                 <h3 class="text-h6">Detailed Analysis</h3>
                 <p class="text-subtext">
@@ -36,9 +35,7 @@
 
             <div class="step">
                 <span class="step-icon">
-                    <i
-                        class="fa-sharp fa-code-compare text-[2rem] md:text-[2.5rem] text-secondary"
-                    />
+                    <GitCompare size={32} class="md:w-10 md:h-10 text-secondary" />
                 </span>
                 <h3 class="text-h6">Benchmark Comparison</h3>
                 <p class="text-subtext">
@@ -48,9 +45,7 @@
 
             <div class="step">
                 <span class="step-icon">
-                    <i
-                        class="fa-sharp fa-calendar-check text-[2rem] md:text-[2.5rem] text-secondary"
-                    />
+                    <CalendarCheck size={32} class="md:w-10 md:h-10 text-secondary" />
                 </span>
                 <h3 class="text-h6">Action Plan</h3>
                 <p class="text-subtext">

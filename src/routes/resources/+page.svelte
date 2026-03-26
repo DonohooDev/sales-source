@@ -3,6 +3,7 @@
     import ABSDFlowchartDownload from "$lib/assets/absd-full-flowchart.pdf";
     import ResourceBackground from "$lib/assets/resource-background.png";
     import ButtonLink from "$lib/components/ButtonLink.svelte";
+    import { CircleCheck } from "lucide-svelte";
 </script>
 
 <svelte:head></svelte:head>
@@ -62,21 +63,21 @@
                         class="text-left list-none p-0 mt-2 lg:mt-4 flex flex-col gap-3 lg:gap-4 mb-2 lg:mb-4"
                     >
                         <div class="flex items-start gap-4" role="listitem">
-                            <i style="color: #41497E" class="fa solid fa-circle-check mt-1" />
+                            <CircleCheck size={20} color="#41497E" class="shrink-0 mt-1" />
                             <p>
                                 Find out the “must-haves” to make Account-Based Sales Development a
                                 success
                             </p>
                         </div>
                         <div class="flex items-start gap-4" role="listitem">
-                            <i style="color: #41497E" class="fa solid fa-circle-check mt-1" />
+                            <CircleCheck size={20} color="#41497E" class="shrink-0 mt-1" />
                             <p>
                                 Understand how the key features of your sales cycle and market
                                 affect your demand generation strategy
                             </p>
                         </div>
                         <div class="flex items-start gap-4" role="listitem">
-                            <i style="color: #41497E" class="fa solid fa-circle-check mt-1" />
+                            <CircleCheck size={20} color="#41497E" class="shrink-0 mt-1" />
                             <p>Download an ungated full version of our infographic below</p>
                         </div>
                     </ul>

@@ -1,9 +1,10 @@
 import type { SolutionCard } from "../types/solution-card";
 import type { FAQ } from "../types/faq";
+import { UserCheck, PlaneTakeoff, Gauge, GitBranch, TrendingUp, PhoneOff, Database, BadgeDollarSign, Scale } from "lucide-svelte";
 
 export const homeSolutions: SolutionCard[] = [
     {
-        icon: "fa-sharp fa-user-ninja",
+        icon: UserCheck,
         title: "Assess",
         subtitle: "Detailed Audits to identify key areas of improvement.",
         bullets: [
@@ -15,7 +16,7 @@ export const homeSolutions: SolutionCard[] = [
         ],
     },
     {
-        icon: "fa-solid fa-plane-departure",
+        icon: PlaneTakeoff,
         title: "Ascend",
         subtitle: "Customized solutions tailored to your specific needs.",
         bullets: [
@@ -27,7 +28,7 @@ export const homeSolutions: SolutionCard[] = [
         ],
     },
     {
-        icon: "fa-solid fa-gauge-high",
+        icon: Gauge,
         title: "Accelerate",
         subtitle: "Tailored solutions to increase sales performance and drive growth.",
         bullets: [
@@ -61,37 +62,37 @@ export const homeFAQ: FAQ[] = [
 
 export const homeChallenges = [
     {
-        icon: "fa-solid fa-timeline",
+        icon: GitBranch,
         title: "Pipeline Creation",
         subtitle:
             "Facing challenges in generating a consistent flow of qualified leads, impacting overall sales performance and growth potential.",
     },
     {
-        icon: "fa-solid fa-arrow-up-right-dots",
+        icon: TrendingUp,
         title: "Conversion Rates",
         subtitle:
             "Experiencing a decline in conversion rates from outreach efforts, affecting the efficiency of the sales process and overall revenue growth.",
     },
     {
-        icon: "fa-solid fa-phone-xmark",
+        icon: PhoneOff,
         title: "Inefficient Inbound",
         subtitle:
             "Struggling to effectively manage and convert incoming leads, resulting in missed opportunities and suboptimal utilization of marketing efforts.",
     },
     {
-        icon: "fa-solid fa-database",
+        icon: Database,
         title: "Tech Stack",
         subtitle:
             "Encountering operational inefficiencies and integration issues within your technology stack, hindering seamless workflows and productivity.",
     },
     {
-        icon: "fa-solid fa-comments-dollar",
+        icon: BadgeDollarSign,
         title: "Compensation Plans",
         subtitle:
             "Dealing with suboptimal sales compensation structures that fail to motivate the team, leading to decreased performance and revenue impact.",
     },
     {
-        icon: "fa-solid fa-scale-unbalanced",
+        icon: Scale,
         title: "Misalignment",
         subtitle:
             "Facing misalignment and communication breakdowns between sales and marketing teams, leading to inefficiencies and missed revenue opportunities.",

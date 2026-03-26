@@ -1,4 +1,6 @@
 <script lang="ts">
+    import { ChevronDown } from "lucide-svelte";
+
     export let menuName: string;
 </script>
 
@@ -12,7 +14,7 @@
         >
             <span>{menuName}</span>
             <span class="transition-transform ease">
-                <i class="fa-solid fa-chevron-down" />
+                <ChevronDown size={20} />
             </span>
         </summary>
 

@@ -5,6 +5,7 @@
     import Services from "$lib/assets/services.webp";
     import Solutions from "$lib/components/Solutions.svelte";
     import CommonChallenges from "$lib/components/home/CommonChallenges.svelte";
+    import { CircleDollarSign, UserRoundPlus, PieChart, BriefcaseBusiness } from "lucide-svelte";
 </script>
 
 <svelte:head>
@@ -67,9 +68,7 @@
 
         <ul class="metrics">
             <li class="metric">
-                <i
-                    class="fa-regular fa-chart-mixed-up-circle-dollar text-[3.85rem] md:text-[4.5rem] mb-4 text-secondary"
-                />
+                <CircleDollarSign size={62} class="md:w-[72px] md:h-[72px] mb-4 text-secondary" />
                 <p class="text-h6 mb-2">Conversion Rates</p>
                 <p class="text-subtext">
                     Increasing the number of leads that convert into paying customers.
@@ -77,9 +76,7 @@
             </li>
 
             <li class="metric">
-                <i
-                    class="fa-regular fa-person-arrow-up-from-line text-[3.85rem] md:text-[4.5rem] mb-4 text-secondary"
-                />
+                <UserRoundPlus size={62} class="md:w-[72px] md:h-[72px] mb-4 text-secondary" />
                 <p class="text-h6 mb-2">Pipeline Coverage</p>
                 <p class="text-subtext">
                     Ensuring that your sales pipeline is full and healthy with potential leads.
@@ -87,9 +84,7 @@
             </li>
 
             <li class="metric">
-                <i
-                    class="fa-regular fa-chart-pie-simple-circle-dollar text-[3.85rem] md:text-[4.5rem] mb-4 text-secondary"
-                />
+                <PieChart size={62} class="md:w-[72px] md:h-[72px] mb-4 text-secondary" />
                 <p class="text-h6 mb-2">Revenue</p>
                 <p class="text-subtext">
                     Increasing the amount of revenue generated from your sales efforts.
@@ -97,9 +92,7 @@
             </li>
 
             <li class="metric">
-                <i
-                    class="fa-regular fa-business-time text-[3.85rem] md:text-[4.5rem] mb-4 text-secondary"
-                />
+                <BriefcaseBusiness size={62} class="md:w-[72px] md:h-[72px] mb-4 text-secondary" />
                 <p class="text-h6 mb-2">Efficiency</p>
                 <p class="text-subtext">
                     Streamlining your sales processes to maximize productivity and results.

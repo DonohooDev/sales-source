@@ -1,39 +1,40 @@
 import type { SolutionCard } from "../../../types/solution-card";
 import type { FAQ } from "../../../types/faq";
+import { Timer, IdCard, Presentation, ShieldCheck, DoorOpen, Handshake, Eye, BellRing, Laptop } from "lucide-svelte";
 
 export const sdrChallenges = [
     {
-        icon: "fa-regular fa-traffic-light-slow",
+        icon: Timer,
         title: "Operational Inefficiency",
         subtitle:
             "Systems are rarely optimized to help your SDR Org operate with maximum efficiency, leading to inefficient and frustrated team members.",
     },
     {
-        icon: "fa-regular fa-id-card",
+        icon: IdCard,
         title: "Data Quality Issues",
         subtitle:
             "Dirty data for account and contacts can crush or significantly diminish your outreach efforts, and capturing the wrong data leads to operating on a hamster wheel of wasted efforts.",
     },
     {
-        icon: "fa-regular fa-person-chalkboard",
+        icon: Presentation,
         title: "Skills Issues",
         subtitle:
             "Without proper and ongoing training, inconsistency and poor practices diminish your success rates and make it nearly impossible to identify what's working.",
     },
     {
-        icon: "fa-regular fa-building-lock",
+        icon: ShieldCheck,
         title: "Process & Technology Misalignment",
         subtitle:
             "The operational gridlock created when process are undefined or unclear leads to frustration and destroys productivity. ",
     },
     {
-        icon: "fa-regular fa-house-person-leave",
+        icon: DoorOpen,
         title: "High Turnover",
         subtitle:
             "Compensation plans that are misaligned with the goals of the organization can lead to high turnover and low morale.",
     },
     {
-        icon: "fa-regular fa-handshake-angle",
+        icon: Handshake,
         title: "Disengagement",
         subtitle:
             "Struggling to engage prospects effectively can result in low response rates and missed opportunities for conversions.",
@@ -42,7 +43,7 @@ export const sdrChallenges = [
 
 export const sdrSolutions: SolutionCard[] = [
     {
-        icon: "fa-regular fa-tower-observation",
+        icon: Eye,
         title: "Assess",
         subtitle:
             "Full assessment to identify gaps and opportunities throughout your SDR organization.",
@@ -54,7 +55,7 @@ export const sdrSolutions: SolutionCard[] = [
         ],
     },
     {
-        icon: "fa-regular fa-bell-concierge",
+        icon: BellRing,
         title: "Services",
         subtitle:
             "Customized services to help you optimize and gain traction within your team moving forward.",
@@ -66,7 +67,7 @@ export const sdrSolutions: SolutionCard[] = [
         ],
     },
     {
-        icon: "fa-regular fa-laptop-mobile",
+        icon: Laptop,
         title: "Technology",
         subtitle: "Technology stack optimization and implementation around your SDR organization.",
         bullets: [

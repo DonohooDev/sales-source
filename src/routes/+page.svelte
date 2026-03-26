@@ -8,6 +8,7 @@
     import MobileDashboard from "$lib/assets/homepage.webp";
     import DesktopDashboard from "$lib/assets/homepage.webp";
     import MainVideo from "$lib/assets/videos/video_main.mp4";
+    import { Send } from "lucide-svelte";
     import { homeChallenges, homeFAQ, homeSolutions } from "./home";
 </script>
 
@@ -28,7 +29,7 @@
                     <ButtonLink
                         href="/contact-us"
                         btnText="Get started"
-                        icon="fa-light fa-paper-plane text-lg"
+                        icon={Send}
                     />
                 </div>
             </div>

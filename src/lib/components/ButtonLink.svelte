@@ -1,10 +1,11 @@
 <script lang="ts">
     import type { SvelteHTMLElements } from "svelte/elements";
+    import type { ComponentType } from "svelte";
     type $$restProps = SvelteHTMLElements["a"];
 
     export let size: "sm" | "md" | "lg" = "md";
     export let btnText: string;
-    export let icon = "";
+    export let icon: ComponentType | null = null;
     export let btnType: "primary" | "inverted" | "text" | "outlined" = "primary";
 
     const sharedClasses = `flex justify-around items-center ${size === "lg" ? "px-8 py-3 text-lg" : size === "md" ? "px-6 py-3 text-base" : "px-5 py-2 text-base"} text-center border border-solid rounded-md whitespace-nowrap transition-colors duration-300 ease-in-out hover:shadow-sm`;
@@ -42,7 +43,7 @@
 <a {...$$restProps} href={$$restProps.href} class={`${classes} ${$$restProps.class}`}>
     {#if icon}
         <span class="mr-3 lg:mr-5">
-            <i class={icon} />
+            <svelte:component this={icon} size={20} />
         </span>
     {/if}
 

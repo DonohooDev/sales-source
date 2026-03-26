@@ -1,7 +1,7 @@
 <script lang="ts">
     import salesSourceLogo from "$lib/assets/logos/sales-source-logo.png";
     import ButtonLink from "$lib/components/ButtonLink.svelte";
-    import DefaultIcon from "$lib/components/DefaultIcon.svelte";
+    import { Menu, X } from "lucide-svelte";
     import { slide } from "svelte/transition";
     import { quintOut } from "svelte/easing";
     import NavLink from "$lib/components/header/NavLink.svelte";
@@ -30,7 +30,7 @@
         <!-- Hamburger Menu -->
         <div class="hamburger">
             <button on:click={() => toggleMenu()}>
-                <DefaultIcon white classNames="fa-solid fa-bars fa-xl" />
+                <Menu size={24} color="#f9f9f9" />
             </button>
         </div>
 
@@ -86,7 +86,7 @@
                         aria-label="close mobile menu"
                         on:click={() => toggleMenu()}
                     >
-                        <i class="fa-solid fa-xmark fa-xl" />
+                        <X size={24} />
                     </button>
                 </div>
 

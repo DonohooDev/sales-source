@@ -1,9 +1,10 @@
 import type { SolutionCard } from "../../../types/solution-card";
 import type { FAQ } from "../../../types/faq";
+import { ChartLine, UsersRound, Wrench, Database, BatteryLow, SearchCheck, Cloud, Users, Layers } from "lucide-svelte";
 
 export const technologySolutions: SolutionCard[] = [
     {
-        icon: "fa-solid fa-chart-line",
+        icon: ChartLine,
         title: "Advanced Analytics",
         subtitle: "Improve process through data-driven insights and analytics.",
         bullets: [
@@ -15,7 +16,7 @@ export const technologySolutions: SolutionCard[] = [
         ],
     },
     {
-        icon: "fa-solid fa-people-roof",
+        icon: UsersRound,
         title: "CRM Integration",
         subtitle: "Enhance efficiency with seamless CRM integration and process automation.",
         bullets: [
@@ -27,7 +28,7 @@ export const technologySolutions: SolutionCard[] = [
         ],
     },
     {
-        icon: "fa-solid fa-screwdriver-wrench",
+        icon: Wrench,
         title: "Automation Tools",
         subtitle: "Streamline operations with powerful automation tools.",
         bullets: [
@@ -61,37 +62,37 @@ export const technologyFAQ: FAQ[] = [
 
 export const technologyChallenges = [
     {
-        icon: "fa-solid fa-database",
+        icon: Database,
         title: "Data Silos",
         subtitle:
             "Facing challenges with isolated data across various systems, leading to inefficiencies and difficulties in accessing holistic business insights.",
     },
     {
-        icon: "fa-solid fa-battery-quarter",
+        icon: BatteryLow,
         title: "Inefficient Processes",
         subtitle:
             "Manual tasks are slowing down your sales operations, reducing productivity, and impacting overall business efficiency.",
     },
     {
-        icon: "fa-solid fa-magnifying-glass-chart",
+        icon: SearchCheck,
         title: "Lack of Insights",
         subtitle:
             "Struggling to derive actionable insights from your data, hindering informed decision-making and strategic planning.",
     },
     {
-        icon: "fa-solid fa-cloud",
+        icon: Cloud,
         title: "Poor Integration",
         subtitle:
             "Facing challenges in effectively integrating various sales tools, resulting in disconnected workflows and reduced efficiency.",
     },
     {
-        icon: "fa-solid fa-people-arrows",
+        icon: Users,
         title: "Customer Engagement",
         subtitle:
             "Struggling to maintain consistent and meaningful engagement with customers, affecting retention and satisfaction levels.",
     },
     {
-        icon: "fa-solid fa-layer-group",
+        icon: Layers,
         title: "Scalability Issues",
         subtitle:
             "Facing difficulties in scaling your technology infrastructure to support growing business demands and maintain performance throughout operations.",

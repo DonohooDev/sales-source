@@ -1,6 +1,7 @@
 <script lang="ts">
     export let menuName: string;
 
+    import { ChevronDown } from "lucide-svelte";
     import { fade } from "svelte/transition";
 
     let isDropdownOpen = false;
@@ -23,7 +24,7 @@
         on:focusout={toggleDropdown}
     >
         {menuName}
-        <i class="fa-solid fa-chevron-down fa-sm ml-2" />
+        <ChevronDown size={14} class="ml-2" />
     </button>
 
     {#if isDropdownOpen}

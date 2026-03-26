@@ -1,5 +1,6 @@
 <script lang="ts">
     import ButtonLink from "$lib/components/ButtonLink.svelte";
+    import { ArrowLeft } from "lucide-svelte";
     import type { PostContents } from "./blog-post";
 
     export let postDate: string;
@@ -18,7 +19,7 @@
         <nav>
             <span class="inline-block mb-4 md:mb-6 2xl:mb-8">
                 <ButtonLink
-                    icon="fa-sharp fa-left-long"
+                    icon={ArrowLeft}
                     href="/blog"
                     btnText="Back"
                     btnType="outlined"

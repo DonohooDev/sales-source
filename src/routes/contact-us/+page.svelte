@@ -2,6 +2,7 @@
 	import GridBackgroundWrapper from "$lib/components/GridBackgroundWrapper.svelte";
 	import ButtonLink from "$lib/components/ButtonLink.svelte";
 	import Lars from "$lib/assets/headshots/lars-nilsson.webp";
+	import { ExternalLink, Mail } from "lucide-svelte";
 </script>
 
 <svelte:head>
@@ -59,7 +60,7 @@
 					<ButtonLink
 						btnType="primary"
 						btnText="Connect on LinkedIn"
-						icon="fa-brands fa-linkedin"
+						icon={ExternalLink}
 						href="https://www.linkedin.com/in/lanilsson"
 						target="_blank"
 						rel="noopener noreferrer"
@@ -67,7 +68,7 @@
 					<ButtonLink
 						btnType="outlined"
 						btnText="Email Us"
-						icon="fa-light fa-envelope"
+						icon={Mail}
 						href="mailto:team@salessource.com"
 					/>
 				</div>

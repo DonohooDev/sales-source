@@ -13,7 +13,6 @@
 
 <!-- Meta handled in the main app.html file -->
 
-<GridBackgroundWrapper>
     <section class="text-center content-lg">
         <header>
             <h1 id="pipeline-creation" class="max-w-[800px] mx-auto">
@@ -81,7 +80,6 @@
         questions={homeFAQ}
         footerText="Ready to modernize your pipeline creation processes? Contact us today."
     />
-</GridBackgroundWrapper>
 
 <style type="postcss">
 </style>

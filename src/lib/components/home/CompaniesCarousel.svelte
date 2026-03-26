@@ -9,7 +9,7 @@
     import IntappLogo from "$lib/assets/logos/companies-carousel/intapp.svg";
     import AnvilogicLogo from "$lib/assets/logos/companies-carousel/anvilogic.svg";
 
-    import DefaultIcon from "$lib/components/DefaultIcon.svelte";
+    import { ChevronLeft, ChevronRight } from "lucide-svelte";
     import type { EmblaCarouselType, EmblaEventType, EmblaOptionsType } from "embla-carousel";
     import Carousel from "embla-carousel-svelte";
 
@@ -93,11 +93,11 @@
                 <!-- Previous -->
                 <button
                     type="button"
-                    class="absolute top-1/2 -translate-y-1/2 left-6 hover:text-txt-hover"
+                    class="absolute top-1/2 -translate-y-1/2 left-6 hover:text-txt-hover text-secondary"
                     aria-label="previous slide"
                     on:click={onClickPrev}
                 >
-                    <DefaultIcon classNames="fa-solid fa-chevron-up fa-rotate-270" />
+                    <ChevronLeft size={24} />
                 </button>
             {/if}
 
@@ -105,11 +105,11 @@
                 <!-- Next -->
                 <button
                     type="button"
-                    class="absolute top-1/2 -translate-y-1/2 right-6 hover:text-txt-hover"
+                    class="absolute top-1/2 -translate-y-1/2 right-6 hover:text-txt-hover text-secondary"
                     aria-label="next slide"
                     on:click={onClickNext}
                 >
-                    <DefaultIcon classNames="fa-solid fa-chevron-up fa-rotate-90" />
+                    <ChevronRight size={24} />
                 </button>
             {/if}
         </div>

@@ -1,5 +1,6 @@
 <script lang="ts">
     import ButtonLink from "$lib/components/ButtonLink.svelte";
+    import { ChevronUp } from "lucide-svelte";
     import type { FAQ } from "../../../types/faq";
 
     export let title = "Frequently Asked Questions";
@@ -39,7 +40,7 @@
                                 class:rotate-180={openIndex === index}
                                 class="transition-transform ease ml-6"
                             >
-                                <i class="fa-solid fa-chevron-up" />
+                                <ChevronUp size={20} />
                             </span>
                         </summary>
 

@@ -1,5 +1,6 @@
 <script lang="ts">
     import Button from "$lib/components/Button.svelte";
+    import { Maximize } from "lucide-svelte";
     import BlogPostWrapper from "../BlogPostWrapper.svelte";
     const postContents = [
         { id: "introduction", title: "Introduction" },
@@ -143,7 +144,7 @@
                 />
             </div>
 
-            <Button clickHandler={fullScreen} icon="fa-solid fa-expand">View fullscreen</Button>
+            <Button clickHandler={fullScreen} icon={Maximize}>View fullscreen</Button>
         </section>
 
         <section>

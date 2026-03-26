@@ -1,39 +1,40 @@
 import type { SolutionCard } from "../../../types/solution-card";
 import type { FAQ } from "../../../types/faq";
+import { MessageCircle, UserPlus, Inbox, Crown, ChartLine, Megaphone, Eye, BellRing, Laptop } from "lucide-svelte";
 
 export const marketingChallenges = [
     {
-        icon: "fa-sharp fa-light fa-message-dots",
+        icon: MessageCircle,
         title: "Bad Persona and Messaging Alignment",
         subtitle:
             "The buyer landscape is changing, and with it, the Ideal Customer Profile and Buyer Personas making it harder than ever to resonate with potential buyers.",
     },
     {
-        icon: "fa-sharp fa-light fa-user-plus",
+        icon: UserPlus,
         title: "Lead Scoring and Routing",
         subtitle:
             "Getting leads is one thing. Getting and identifying quality leads and getting them to the right person...that's a different story altogether.",
     },
     {
-        icon: "fa-sharp fa-light fa-inbox-full",
+        icon: Inbox,
         title: "Compliance and Outbound Thresholds",
         subtitle:
             "With new industry regulations, how can you protect your business from falling prey to more intense Spamming requirements while still getting your message out there?",
     },
     {
-        icon: "fa-sharp fa-light fa-chess",
+        icon: Crown,
         title: "Competing Data Sources",
         subtitle:
             "Competing Data Sources and incompatible technologies can make your marketing data and processes a knotted ball of yarn that's impossible to make sense of.",
     },
     {
-        icon: "fa-sharp fa-light fa-chart-line",
+        icon: ChartLine,
         title: "Market Segmentation and Targeting",
         subtitle:
             "Identifying and effectively reaching the right market segments is critical yet challenging in a saturated and diverse marketplace.",
     },
     {
-        icon: "fa-sharp fa-light fa-bullhorn",
+        icon: Megaphone,
         title: "Attribution and ROI",
         subtitle:
             "Measuring the true impact and ROI of marketing campaigns can be difficult, making it hard to refine strategies and allocate budgets effectively.",
@@ -42,7 +43,7 @@ export const marketingChallenges = [
 
 export const marketingSolutions: SolutionCard[] = [
     {
-        icon: "fa-regular fa-tower-observation",
+        icon: Eye,
         title: "Assess",
         subtitle:
             "Detailed audits across your ICP and Messaging approach, Marketing tech stack, lead scoring and routing, and outreach strategy.",
@@ -54,7 +55,7 @@ export const marketingSolutions: SolutionCard[] = [
         ],
     },
     {
-        icon: "fa-regular fa-bell-concierge",
+        icon: BellRing,
         title: "Services",
         subtitle:
             "Strategic advisory and consulting services to help you optimize your marketing strategy and tech stack for better results.",
@@ -66,7 +67,7 @@ export const marketingSolutions: SolutionCard[] = [
         ],
     },
     {
-        icon: "fa-regular fa-laptop-mobile",
+        icon: Laptop,
         title: "Technology",
         subtitle:
             "Implementation and integration services that help get from strategy to execution, and ensure your tech stack is optimized for your needs.",

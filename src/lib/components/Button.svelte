@@ -1,5 +1,7 @@
 <script lang="ts">
-    export let icon = "";
+    import type { ComponentType } from "svelte";
+
+    export let icon: ComponentType | null = null;
     export let btnType: "primary" | "inverted" | "text" | "outlined" = "primary";
     export let clickHandler: () => void;
 
@@ -38,7 +40,7 @@
 <button class={className} on:click={clickHandler}>
     {#if icon}
         <span class="mr-4">
-            <i class={icon} />
+            <svelte:component this={icon} size={20} />
         </span>
     {/if}
 

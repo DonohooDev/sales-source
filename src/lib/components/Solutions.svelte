@@ -1,5 +1,5 @@
 <script lang="ts">
-    import DefaultIcon from "$lib/components/DefaultIcon.svelte";
+    import { CircleCheck } from "lucide-svelte";
     import type { SolutionCard } from "../../types/solution-card";
 
     export let title: string;
@@ -17,19 +17,16 @@
         <div class="cards">
             {#each cards as card}
                 <div class="card">
-                    <DefaultIcon
-                        classNames="{card.icon} rounded-full bg-bg-contrast m-auto text-2xl md:text-3xl lg:text-4xl p-3 md:p-4 lg:p-5 mb-4 md:mb-6"
-                    />
+                    <span class="rounded-full bg-bg-contrast m-auto p-3 md:p-4 lg:p-5 mb-4 md:mb-6 text-secondary inline-flex">
+                        <svelte:component this={card.icon} size={32} class="md:w-9 md:h-9 lg:w-10 lg:h-10" />
+                    </span>
                     <h3 class="text-h5">{card.title}</h3>
                     <p class="text-subtext flex-1">{card.subtitle}</p>
 
                     <ul class="solution-list">
                         {#each card.bullets as bullet, i}
                             <div class="flex items-start gap-4" role="listitem">
-                                <i
-                                    style="color: #41497E"
-                                    class="fa solid fa-circle-check lg:text-lg"
-                                />
+                                <CircleCheck size={20} color="#41497E" class="shrink-0 lg:w-5 lg:h-5" />
                                 <p class="text-sm">{bullet}</p>
                             </div>
                         {/each}

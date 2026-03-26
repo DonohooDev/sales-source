@@ -1,9 +1,10 @@
 import type { SolutionCard } from "../../../types/solution-card";
 import type { FAQ } from "../../../types/faq";
+import { Rocket, Sprout, Presentation, Users, TrendingUp, BriefcaseBusiness, Database, Repeat } from "lucide-svelte";
 
 export const servicesSolutions: SolutionCard[] = [
     {
-        icon: "fa-regular fa-rocket-launch",
+        icon: Rocket,
         title: "Launch",
         subtitle: "Foundations for starting new GTM motions and building strong pipelines.",
         bullets: [
@@ -15,7 +16,7 @@ export const servicesSolutions: SolutionCard[] = [
         ],
     },
     {
-        icon: "fa-regular fa-hand-holding-seedling",
+        icon: Sprout,
         title: "Grow",
         subtitle: "Enhancing and growing young, developing teams and processes.",
         bullets: [
@@ -27,7 +28,7 @@ export const servicesSolutions: SolutionCard[] = [
         ],
     },
     {
-        icon: "fa-regular fa-person-chalkboard",
+        icon: Presentation,
         title: "Lead",
         subtitle: "Optimizing large, established teams for peak performance.",
         bullets: [
@@ -61,37 +62,37 @@ export const servicesFAQ: FAQ[] = [
 
 export const servicesChallenges = [
     {
-        icon: "fa-solid fa-people-arrows",
+        icon: Users,
         title: "Inbound Conversions",
         subtitle:
             "Overcome low inbound conversions with our comprehensive pipeline services designed to boost qualified lead generation.",
     },
     {
-        icon: "fa-solid fa-arrow-up-right-dots",
+        icon: TrendingUp,
         title: "Conversion Rates",
         subtitle:
             "Combat decreasing conversion rates with our tailored pipeline services designed to enhance outbound sales effectiveness.",
     },
     {
-        icon: "fa-solid fa-business-time",
+        icon: BriefcaseBusiness,
         title: "Inefficient Processes",
         subtitle:
             "Optimize your spending and streamline operations with our comprehensive pipeline services designed for maximum efficiency.",
     },
     {
-        icon: "fa-solid fa-database",
+        icon: Database,
         title: "Tech Stack Optimization",
         subtitle:
             "Resolve operational challenges and enhance efficiency with our specialized services for optimizing your technology stack.",
     },
     {
-        icon: "fa-solid fa-chalkboard-user",
+        icon: Presentation,
         title: "Coaching and Compensation",
         subtitle:
             "Improve motivation and performance with our expert coaching and compensation strategies designed to drive the right behaviors.",
     },
     {
-        icon: "fa-solid fa-repeat",
+        icon: Repeat,
         title: "Process Consistency",
         subtitle:
             "Standardize and streamline your sales process to ensure consistent and reliable results across your entire team and the organization as a whole.",

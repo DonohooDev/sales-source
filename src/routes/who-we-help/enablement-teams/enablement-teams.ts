@@ -1,40 +1,41 @@
 import type { SolutionCard } from "../../../types/solution-card";
 import type { FAQ } from "../../../types/faq";
 import type { Challenge } from "../../../types/challenge";
+import { Crown, Settings, CalendarDays, Briefcase, DoorOpen, MonitorPlay, Eye, BellRing, Laptop } from "lucide-svelte";
 
 export const enablementChallenges: Challenge[] = [
     {
-        icon: "fa-sharp fa-light fa-chess",
+        icon: Crown,
         title: "Lack of Strategy",
         subtitle:
             "Lack of strategy makes you a victim of constant and ever-changing requests that drive a lot of activity with little impact to show for it.",
     },
     {
-        icon: "fa-sharp fa-light fa-gear-complex-code",
+        icon: Settings,
         title: "Standardization Collapse",
         subtitle:
             "Individuals and teams operating in silos make it nearly impossible to create meaningful processes and programs that can scale.",
     },
     {
-        icon: "fa-sharp fa-light fa-calendar-users",
+        icon: CalendarDays,
         title: "Lack of Training",
         subtitle:
             "Efforts to upskill sales reps fall flat because they aren't grounded in data-driven best practices and science-based learning principles.",
     },
     {
-        icon: "fa-sharp fa-light fa-toolbox",
+        icon: Briefcase,
         title: "Content & Tooling",
         subtitle:
             "Reps don't have the content or tools they need to engage prospects effectively, leading to low response rates and missed opportunities.",
     },
     {
-        icon: "fa-sharp fa-light fa-door-open",
+        icon: DoorOpen,
         title: "Onboarding Silos",
         subtitle:
             "New hires are left to fend for themselves, leading to high turnover and low productivity.",
     },
     {
-        icon: "fa-sharp fa-light fa-screen-users",
+        icon: MonitorPlay,
         title: "Coaching Woes",
         subtitle:
             "Managers don't have the tools or training they need to coach their teams effectively, leading to inconsistent performance.",
@@ -43,7 +44,7 @@ export const enablementChallenges: Challenge[] = [
 
 export const enablementSolutions: SolutionCard[] = [
     {
-        icon: "fa-regular fa-tower-observation",
+        icon: Eye,
         title: "Assess",
         subtitle: "Detailed audits across your Enablement strategy, programs, content, and tools.",
         bullets: [
@@ -54,7 +55,7 @@ export const enablementSolutions: SolutionCard[] = [
         ],
     },
     {
-        icon: "fa-regular fa-bell-concierge",
+        icon: BellRing,
         title: "Services",
         subtitle:
             "Customized services to help you optimize and gain traction within your team moving forward.",
@@ -66,7 +67,7 @@ export const enablementSolutions: SolutionCard[] = [
         ],
     },
     {
-        icon: "fa-regular fa-laptop-mobile",
+        icon: Laptop,
         title: "Technology",
         subtitle:
             "Enablement platform evaluation, implementation, configuration, and optimization.",

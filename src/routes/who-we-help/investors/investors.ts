@@ -1,40 +1,41 @@
 import type { SolutionCard } from "../../../types/solution-card";
 import type { FAQ } from "../../../types/faq";
 import type { Challenge } from "../../../types/challenge";
+import { BarChartBig, CircleHelp, TrendingDown, Users, Puzzle, Binoculars, Eye, BellRing, Laptop } from "lucide-svelte";
 
 export const investorsChallenges: Challenge[] = [
     {
-        icon: "fa-sharp fa-light fa-chart-line-up-down",
+        icon: BarChartBig,
         title: "Inconclusive Data",
         subtitle:
             "Inadequate data makes it impossible to make sound decisions and to know how and when to pivot your strategy.",
     },
     {
-        icon: "fa-sharp fa-light fa-person-circle-question",
+        icon: CircleHelp,
         title: "Lacking Process & Technology",
         subtitle:
             "Without the proper processes and tech stack in place, operational friction keeps your teams from working efficiently.",
     },
     {
-        icon: "fa-sharp fa-light fa-chart-line-down",
+        icon: TrendingDown,
         title: "Underperformance",
         subtitle:
             "The lack of skills and competence across your organization lowers the impact each individual contributor and leader is capable of making.",
     },
     {
-        icon: "fa-sharp fa-light fa-people-arrows",
+        icon: Users,
         title: "Market Volatility",
         subtitle:
             "Rapid changes in market conditions can lead to increased risk and uncertainty, making it difficult to protect and grow investments.",
     },
     {
-        icon: "fa-sharp fa-light fa-puzzle-piece",
+        icon: Puzzle,
         title: "Integration Issues",
         subtitle:
             "Integrating new acquisitions or technologies can be complex and time-consuming, often resulting in delays and unexpected costs.",
     },
     {
-        icon: "fa-sharp fa-light fa-binoculars",
+        icon: Binoculars,
         title: "Identifying Opportunities",
         subtitle:
             "Finding high-potential investment opportunities in a crowded market requires significant time, effort, and expertise.",
@@ -43,7 +44,7 @@ export const investorsChallenges: Challenge[] = [
 
 export const investorsSolutions: SolutionCard[] = [
     {
-        icon: "fa-regular fa-tower-observation",
+        icon: Eye,
         title: "Assess",
         subtitle: "Detailed audits across your Marketing, Operation, SDR, and Enablement Functions",
         bullets: [
@@ -54,7 +55,7 @@ export const investorsSolutions: SolutionCard[] = [
         ],
     },
     {
-        icon: "fa-regular fa-bell-concierge",
+        icon: BellRing,
         title: "Services",
         subtitle: "GTM Strategy spanning Marketing, Operations, SDRs, and Enablement",
         bullets: [
@@ -65,7 +66,7 @@ export const investorsSolutions: SolutionCard[] = [
         ],
     },
     {
-        icon: "fa-regular fa-laptop-mobile",
+        icon: Laptop,
         title: "Technology & Tools",
         subtitle: "Technology Evaluation, Implementation, Configuration, and Optimization.",
         bullets: [

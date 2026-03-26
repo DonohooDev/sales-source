@@ -76,7 +76,7 @@
                     <img src={ProcoreLogo} alt="Procore Logo" />
                 </div>
                 <div class="carousel-slide">
-                    <img src={UnityLogo} alt="Procore Logo" />
+                    <img src={UnityLogo} alt="Unity Logo" />
                 </div>
                 <div class="carousel-slide">
                     <img src={ConfluentLogo} alt="Confluent Logo" />

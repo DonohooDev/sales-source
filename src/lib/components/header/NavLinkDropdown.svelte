@@ -39,11 +39,12 @@
 </li>
 
 <style lang="postcss">
+    @reference "../../../app.css";
     .nav-dropdown {
         @apply relative;
 
         &::after {
-            @apply absolute top-[90%] left-0 right-0 -bottom-[25%] bg-transparent transition-bg ease-linear duration-150;
+            @apply absolute top-[90%] left-0 right-0 -bottom-[25%] bg-transparent transition-[background-color] ease-linear duration-150;
             content: "";
         }
 
@@ -54,12 +55,12 @@
             }
 
             & > button {
-                @apply bg-primary outline-none text-txt-white hover:bg-primary hover:text-txt-white hover:outline-none;
+                @apply bg-primary outline-hidden text-txt-white hover:bg-primary hover:text-txt-white hover:outline-none;
             }
         }
 
         & > button {
-            @apply flex items-center px-4 py-2 text-txt-white hover:text-primary hover:outline hover:outline-primary hover:bg-bg-soft transition-bg ease-linear duration-200 rounded-md;
+            @apply flex items-center px-4 py-2 text-txt-white hover:text-primary hover:outline-solid hover:outline-primary hover:bg-bg-soft transition-[background-color] ease-linear duration-200 rounded-md;
         }
 
         &:hover a {

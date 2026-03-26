@@ -30,7 +30,7 @@
     <meta property="og:locale" content="en_US" />
 </svelte:head>
 
-<BlogPostWrapper postDate="12-10-2019" author="Travis Henry" {postContents}>
+<BlogPostWrapper postDate="12-10-2019" author="Travis Henry" title="How to Assemble The Ultimate SDR Team" description="Learn how to build a world-class sales development team with diverse skill sets that uplift the whole." {postContents}>
     <h1 id="introduction" slot="title">How to Assemble The Ultimate SDR Team</h1>
 
     <div slot="content">

@@ -87,6 +87,7 @@
                 width="2121"
                 height="1414"
                 alt="view of mans hands working on multiple computers profusely"
+                loading="lazy"
                 class="improvement-graphic"
             />
             <header>
@@ -235,6 +236,7 @@
 </GridBackgroundWrapper>
 
 <style type="postcss">
+    @reference "../../../app.css";
     .improvement {
         @apply mt-8 md:mt-12 2xl:mt-20 flex flex-col lg:grid lg:grid-cols-5 lg:gap-8 items-center;
 

@@ -58,6 +58,7 @@
 </section>
 
 <style type="postcss">
+    @reference "../../../app.css";
     .steps {
         @media screen and (min-width: 1075px) {
             position: relative;
@@ -89,6 +90,6 @@
     }
 
     .step-icon {
-        @apply bg-bg-primary shadow-md rounded-full p-6 mb-2 border-4 border-solid border-secondary transition-bg;
+        @apply bg-bg-primary shadow-md rounded-full p-6 mb-2 border-4 border-solid border-secondary transition-[background-color];
     }
 </style>

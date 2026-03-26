@@ -43,6 +43,7 @@
                 alt="people discussing analytics on laptop"
                 width="2119"
                 height="1059"
+                loading="lazy"
                 class="w-full mx-auto rounded-md shadow-lg"
             />
         </header>

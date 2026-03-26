@@ -31,6 +31,7 @@
 </section>
 
 <style lang="postcss" scoped>
+    @reference "../../../app.css";
     .common-challenges {
         @apply text-center;
     }

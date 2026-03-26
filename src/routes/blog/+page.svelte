@@ -267,6 +267,7 @@
 </div>
 
 <style type="postcss">
+    @reference "../../app.css";
     .blog-list {
         @apply grid grid-cols-1 gap-8;
     }

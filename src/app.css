@@ -1,19 +1,122 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss';
 
-html {
-    scroll-behavior: smooth;
-    font-family: "Lato", sans-serif;
-    font-optical-sizing: auto;
-    font-style: normal;
-    font-variant: normal;
-    scroll-behavior: smooth;
+@custom-variant hocus (&:hover, &:focus);
 
-    @apply bg-bg-primary text-txt text-base font-light;
+@theme {
+  /* Custom breakpoints */
+  --breakpoint-sm: 480px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 976px;
+  --breakpoint-xl: 1200px;
+  --breakpoint-2xl: 1440px;
+
+  /* Custom colors */
+  --color-primary: #202046;
+  --color-secondary: #41497E;
+  --color-bg-primary: #F9F9F9;
+  --color-bg-soft: #f2f2f4;
+  --color-bg-contrast: #EAEAEC;
+  --color-disabled: #D1D1D4;
+  --color-divider: #DDDDF2;
+  --color-txt-hover: #9ca3af;
+  --color-txt-header: #101828;
+  --color-txt: #4b5563;
+  --color-txt-white: #F9F9F9;
+}
+
+/*
+  The default border color has changed to `currentcolor` in Tailwind CSS v4,
+  so we've added these compatibility styles to make sure everything still
+  looks the same as it did with Tailwind CSS v3.
+
+  If we ever want to remove these styles, we need to add an explicit border
+  color utility to any element that depends on these defaults.
+*/
+@layer base {
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-gray-200, currentcolor);
+  }
+}
+
+@utility text-h1 {
+  @apply text-4xl md:text-5xl 2xl:text-6xl text-txt-header font-semibold;
+}
+
+@utility text-h2 {
+  @apply text-3xl md:text-4xl 2xl:text-5xl text-txt-header font-semibold;
+}
+
+@utility text-h3 {
+  @apply text-2xl md:text-3xl 2xl:text-4xl text-txt-header font-semibold;
+}
+
+@utility text-h4 {
+  @apply text-xl md:text-2xl 2xl:text-3xl text-txt-header font-semibold;
+}
+
+@utility text-h5 {
+  @apply text-lg md:text-xl 2xl:text-2xl text-txt-header font-semibold;
+}
+
+@utility text-h6 {
+  @apply text-base md:text-lg 2xl:text-xl text-txt-header font-semibold;
+}
+
+@utility text-paragraph {
+  @apply mb-3 md:mb-4 2xl:mb-6;
+}
+
+@utility text-subtitle {
+  @apply text-base md:text-lg mb-12 md:mb-16 xl:mb-20 font-normal;
+}
+
+@utility text-subtext {
+  @apply text-sm md:text-base;
+}
+
+@utility content-xs {
+  @apply max-w-2xl mx-auto w-full;
+}
+
+@utility content-sm {
+  @apply max-w-4xl mx-auto w-full;
+}
+
+@utility content-md {
+  @apply max-w-6xl mx-auto w-full;
+}
+
+@utility content-lg {
+  @apply max-w-[1400px] mx-auto w-full;
+}
+
+@utility header-only-section {
+  @apply mb-4 md:mb-8 2xl:mb-10 px-8 md:px-10 lg:px-12 pt-8 md:pt-12;
+
+  & > .text-subtitle {
+    @apply mb-4 md:mb-6 2xl:mb-8;
+  }
+}
+
+@utility section {
+  @apply mb-4 md:mb-8 2xl:mb-10 px-8 md:px-10 lg:px-12 py-8 md:py-12;
 }
 
 @layer base {
+    html {
+        scroll-behavior: smooth;
+        font-family: 'Lato', sans-serif;
+        font-optical-sizing: auto;
+        font-style: normal;
+        font-variant: normal;
+
+        @apply bg-bg-primary text-txt text-base font-light;
+    }
+
     h1 {
         @apply text-4xl md:text-5xl 2xl:text-6xl mb-4 lg:mb-8 font-semibold text-txt-header;
     }
@@ -88,71 +191,5 @@ html {
     details summary::marker {
         display: none;
         content: "";
-    }
-}
-
-@layer components {
-    .text-h1 {
-        @apply text-4xl md:text-5xl 2xl:text-6xl text-txt-header font-semibold;
-    }
-
-    .text-h2 {
-        @apply text-3xl md:text-4xl 2xl:text-5xl text-txt-header font-semibold;
-    }
-
-    .text-h3 {
-        @apply text-2xl md:text-3xl 2xl:text-4xl text-txt-header font-semibold;
-    }
-
-    .text-h4 {
-        @apply text-xl md:text-2xl 2xl:text-3xl text-txt-header font-semibold;
-    }
-
-    .text-h5 {
-        @apply text-lg md:text-xl 2xl:text-2xl text-txt-header font-semibold;
-    }
-
-    .text-h6 {
-        @apply text-base md:text-lg 2xl:text-xl text-txt-header font-semibold;
-    }
-
-    .text-paragraph {
-        @apply mb-3 md:mb-4 2xl:mb-6;
-    }
-
-    .text-subtitle {
-        @apply text-base md:text-lg mb-12 md:mb-16 xl:mb-20 font-normal;
-    }
-
-    .text-subtext {
-        @apply text-sm md:text-base;
-    }
-
-    .content-xs {
-        @apply max-w-2xl mx-auto w-full;
-    }
-
-    .content-sm {
-        @apply max-w-4xl mx-auto w-full;
-    }
-
-    .content-md {
-        @apply max-w-6xl mx-auto w-full;
-    }
-
-    .content-lg {
-        @apply max-w-[1400px] mx-auto w-full;
-    }
-
-    .header-only-section {
-        @apply mb-4 md:mb-8 2xl:mb-10 px-8 md:px-10 lg:px-12 pt-8 md:pt-12;
-
-        & > .text-subtitle {
-            @apply mb-4 md:mb-6 2xl:mb-8;
-        }
-    }
-
-    .section {
-        @apply mb-4 md:mb-8 2xl:mb-10 px-8 md:px-10 lg:px-12 py-8 md:py-12;
     }
 }

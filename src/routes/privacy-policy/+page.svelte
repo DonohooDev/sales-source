@@ -196,6 +196,7 @@
 </GridBackgroundWrapper>
 
 <style lang="postcss">
+    @reference "../../app.css";
     .content {
         @apply max-w-5xl w-full;
 

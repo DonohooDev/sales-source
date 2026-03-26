@@ -44,7 +44,7 @@
     />
 </svelte:head>
 
-<BlogPostWrapper postDate="06-26-2020" author="Brendan Short" {postContents}>
+<BlogPostWrapper postDate="06-26-2020" author="Brendan Short" title="4 Touch Patterns for New Account Based Sales Development Teams" description="Learn essential touch patterns for new ABSD teams, emphasizing the importance of personalizing communication based on account potential and lead source." {postContents}>
     <h1 id="introduction" slot="title">
         4 Must-Have Touch Patterns for New Account-Based Sales Development Teams
     </h1>

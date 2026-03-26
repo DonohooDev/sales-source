@@ -43,6 +43,7 @@
                 alt="behind view of woman giving a presentation"
                 width="2169"
                 height="1085"
+                loading="lazy"
                 class="w-full mx-auto rounded-md shadow-lg"
             />
         </header>

@@ -46,6 +46,7 @@
                 width="2121"
                 height="1060"
                 alt="man working on a laptop"
+                loading="lazy"
                 class="w-full mx-auto rounded-md shadow-lg"
             />
         </header>
@@ -106,6 +107,7 @@
 </GridBackgroundWrapper>
 
 <style type="postcss">
+    @reference "../../../app.css";
     .metrics {
         @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8;
     }

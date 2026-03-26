@@ -45,7 +45,7 @@
     <meta property="article:published_time" content="2020-01-07T00:00:00Z" />
 </svelte:head>
 
-<BlogPostWrapper postDate="01-07-2020" author="Lars Nilsson" {postContents}>
+<BlogPostWrapper postDate="01-07-2020" author="Lars Nilsson" title="Unlocking Success with Outsourced Sales Development" description="Key insights for SaaS companies on outsourced SDR vendors — pay per appointment, pay for activities, and retainer models." {postContents}>
     <h1 id="intro" slot="title">
         Unlocking Success with Outsourced Sales Development: Key Insights for SaaS Companies
     </h1>

@@ -6,7 +6,26 @@
     import { CircleCheck } from "lucide-svelte";
 </script>
 
-<svelte:head></svelte:head>
+<svelte:head>
+    <title>Resources | Sales Source</title>
+    <meta
+        name="description"
+        content="Free resources for account-based sales development — infographics, flowcharts, and guides to help you build and scale your ABSD strategy."
+    />
+    <meta name="keywords" content="ABSD resources, sales development infographics, SDR team guides, account-based sales tools" />
+    <meta property="og:title" content="Resources | Sales Source" />
+    <meta
+        property="og:description"
+        content="Free resources for account-based sales development — infographics, flowcharts, and guides."
+    />
+    <meta property="og:url" content="https://salessource.com/resources/" />
+    <meta name="twitter:title" content="Resources | Sales Source" />
+    <meta
+        name="twitter:description"
+        content="Free resources for account-based sales development — infographics, flowcharts, and guides."
+    />
+    <meta property="twitter:url" content="https://salessource.com/resources/" />
+</svelte:head>
 
 <div class="content-md">
     <section>
@@ -97,6 +116,7 @@
 </div>
 
 <style type="postcss">
+    @reference "../../app.css";
     .resources {
         @apply grid grid-cols-1 gap-8 items-center;
 

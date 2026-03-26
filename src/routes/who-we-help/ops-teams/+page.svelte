@@ -42,6 +42,7 @@
                 alt="data analytics on paper"
                 width="2121"
                 height="1060"
+                loading="lazy"
                 class="w-full mx-auto rounded-md shadow-lg"
             />
         </header>

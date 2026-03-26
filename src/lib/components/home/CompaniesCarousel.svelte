@@ -58,34 +58,34 @@
         <div class="carousel-viewport">
             <div class="carousel-container">
                 <div class="carousel-slide">
-                    <img src={UnityLogo} alt="Unity Logo" />
+                    <img src={UnityLogo} alt="Unity Logo" loading="lazy" />
                 </div>
                 <div class="carousel-slide">
-                    <img src={AsanaLogo} alt="Asana Logo" />
+                    <img src={AsanaLogo} alt="Asana Logo" loading="lazy" />
                 </div>
                 <div class="carousel-slide">
-                    <img src={ZoomLogo} alt="Zoom Logo" />
+                    <img src={ZoomLogo} alt="Zoom Logo" loading="lazy" />
                 </div>
                 <div class="carousel-slide">
-                    <img src={LiveRampLogo} alt="LiveRamp Logo" />
+                    <img src={LiveRampLogo} alt="LiveRamp Logo" loading="lazy" />
                 </div>
                 <div class="carousel-slide">
-                    <img src={UberLogo} class="p-6" alt="Uber Logo" />
+                    <img src={UberLogo} class="p-6" alt="Uber Logo" loading="lazy" />
                 </div>
                 <div class="carousel-slide">
-                    <img src={ProcoreLogo} alt="Procore Logo" />
+                    <img src={ProcoreLogo} alt="Procore Logo" loading="lazy" />
                 </div>
                 <div class="carousel-slide">
-                    <img src={UnityLogo} alt="Procore Logo" />
+                    <img src={UnityLogo} alt="Unity Logo" loading="lazy" />
                 </div>
                 <div class="carousel-slide">
-                    <img src={ConfluentLogo} alt="Confluent Logo" />
+                    <img src={ConfluentLogo} alt="Confluent Logo" loading="lazy" />
                 </div>
                 <div class="carousel-slide">
-                    <img src={AnvilogicLogo} alt="Anvilogic Logo" />
+                    <img src={AnvilogicLogo} alt="Anvilogic Logo" loading="lazy" />
                 </div>
                 <div class="carousel-slide">
-                    <img src={IntappLogo} alt="Intapp Logo" />
+                    <img src={IntappLogo} alt="Intapp Logo" loading="lazy" />
                 </div>
             </div>
 
@@ -117,6 +117,7 @@
 </section>
 
 <style type="postcss">
+    @reference "../../../app.css";
     .companies-carousel {
         @apply relative bg-bg-soft;
     }

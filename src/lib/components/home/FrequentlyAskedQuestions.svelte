@@ -33,7 +33,7 @@
                     >
                         <summary
                             on:click|preventDefault|self={() => toggle(index)}
-                            class="font-semibold focus:outline-none cursor-pointer flex justify-between items-center"
+                            class="font-semibold focus:outline-hidden cursor-pointer flex justify-between items-center"
                         >
                             <span>{faq.question}</span>
                             <span

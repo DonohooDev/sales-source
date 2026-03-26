@@ -6,6 +6,7 @@
 </div>
 
 <style lang="postcss">
+    @reference "../../app.css";
     .hero-wrapper {
         @apply relative flex flex-col w-full;
         background-image: url("$lib/assets/grid-background.svg");

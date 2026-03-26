@@ -34,7 +34,7 @@
     />
 </svelte:head>
 
-<BlogPostWrapper postDate="07-16-2020" author="Lars Nilsson" {postContents}>
+<BlogPostWrapper postDate="07-16-2020" author="Lars Nilsson" title="5 Factors for Successful Account-Based Sales Development" description="Are you considering whether ABSD (Account-Based Sales Development) is suitable for your business? This guide outlines essential aspects, including a detailed flowchart and five key factors influencing ABSD success." {postContents}>
     <h1 id="introduction" slot="title">5 Factors for Successful Account-Based Sales Development</h1>
 
     <p slot="intro">

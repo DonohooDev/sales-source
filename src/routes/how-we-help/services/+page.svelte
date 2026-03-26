@@ -41,6 +41,7 @@
                 alt="man working diligently on computer"
                 width="2241"
                 height="1122"
+                loading="lazy"
                 class="w-full mx-auto rounded-md shadow-lg"
             />
         </header>

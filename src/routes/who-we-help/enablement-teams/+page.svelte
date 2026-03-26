@@ -42,6 +42,7 @@
                 alt="people discussing and working around table"
                 width="2121"
                 height="1060"
+                loading="lazy"
                 class="w-full mx-auto rounded-md shadow-lg"
             />
         </header>

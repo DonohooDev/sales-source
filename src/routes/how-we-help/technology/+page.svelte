@@ -87,6 +87,7 @@
                 width="2121"
                 height="1414"
                 alt="view of mans hands working on multiple computers profusely"
+                loading="lazy"
                 class="improvement-graphic"
             />
             <header>

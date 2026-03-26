@@ -43,7 +43,7 @@
     />
 </svelte:head>
 
-<BlogPostWrapper postDate="09-24-2015" author="Lars Nilsson" {postContents}>
+<BlogPostWrapper postDate="09-24-2015" author="Lars Nilsson" title="A New Methodology in Lead Execution, Target Outbound, and Pipeline Generation" description="The best sales development teams today leverage technology to perform smarter, better, and faster." {postContents}>
     <h1 id="introduction" slot="title">
         A New Methodology in Lead Execution, Target Outbound, and Pipeline Generation
     </h1>

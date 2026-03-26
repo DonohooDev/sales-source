@@ -46,7 +46,7 @@
     <meta property="article:tag" content="Tech Stack" />
 </svelte:head>
 
-<BlogPostWrapper postDate="02-18-2020" author="Lars Nilsson & Travis Henry" {postContents}>
+<BlogPostWrapper postDate="02-18-2020" author="Lars Nilsson & Travis Henry" title="Account-Based Sales Development: The Ultimate Tech Stack" description="This article delves into the ultimate tech stack essential for optimizing Sales Development teams." {postContents}>
     <h1 id="intro" slot="title">Account-Based Sales Development: The Ultimate Tech Stack</h1>
 
     <p slot="intro">

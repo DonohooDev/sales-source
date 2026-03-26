@@ -5,6 +5,8 @@
 
     export let postDate: string;
     export let author: string;
+    export let title: string = "";
+    export let description: string = "";
     export let postContents: PostContents[] = [];
 
     let dateString = new Date(postDate).toLocaleDateString("en-US", {
@@ -12,7 +14,31 @@
         month: "long",
         day: "numeric",
     });
+
+    let isoDate = new Date(postDate).toISOString().split("T")[0];
+
+    $: articleJsonLd = title
+        ? JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Article",
+              headline: title,
+              description: description,
+              author: { "@type": "Person", name: author },
+              datePublished: isoDate,
+              publisher: {
+                  "@type": "Organization",
+                  name: "Sales Source",
+                  url: "https://salessource.com",
+              },
+          })
+        : "";
 </script>
+
+<svelte:head>
+    {#if articleJsonLd}
+        {@html `<script type="application/ld+json">${articleJsonLd}</script>`}
+    {/if}
+</svelte:head>
 
 <article>
     <header class="header-only-section">

@@ -12,7 +12,26 @@
     import { homeChallenges, homeFAQ, homeSolutions } from "./home";
 </script>
 
-<!-- Meta handled in the main app.html file -->
+<svelte:head>
+    <title>Sales Source | Modernize GTM Strategy to Increase Pipeline</title>
+    <meta
+        name="description"
+        content="The world's leading advisory and consulting firm for strategic account-based sales development. Modernize your GTM strategy to increase pipeline."
+    />
+    <meta name="keywords" content="sales development, GTM strategy, pipeline generation, account-based sales, B2B SaaS, SDR consulting" />
+    <meta property="og:title" content="Modernize GTM Strategy to Increase Pipeline" />
+    <meta
+        property="og:description"
+        content="The world's leading advisory and consulting firm for strategic account-based sales development"
+    />
+    <meta property="og:url" content="https://salessource.com/" />
+    <meta name="twitter:title" content="Modernize GTM Strategy to Increase Pipeline" />
+    <meta
+        name="twitter:description"
+        content="The world's leading advisory and consulting firm for strategic account-based sales development"
+    />
+    <meta property="twitter:url" content="https://salessource.com/" />
+</svelte:head>
 
     <section class="text-center content-lg">
         <header>

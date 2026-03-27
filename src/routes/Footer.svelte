@@ -4,25 +4,25 @@
 </script>
 
 <footer>
-    <div class="flex flex-col md:flex-row md:items-start md:gap-12 lg:gap-16 2xl:gap-24 content-lg">
-        <span class="flex-1">
-            <img src={logo} alt="SalesSource logo" class="w-40 mb-3" />
-            <p class="text-subtext">
+    <div class="flex flex-col md:grid md:grid-cols-[1fr_auto_auto_auto] md:grid-rows-[auto_auto] md:gap-x-12 lg:gap-x-16 2xl:gap-x-24 md:gap-y-3 content-lg">
+        <span class="md:contents">
+            <img src={logo} alt="SalesSource logo" class="w-40 mb-3 md:mb-0 md:col-start-1 md:row-start-1 md:self-end" />
+            <p class="text-subtext md:col-start-1 md:row-start-2">
                 SalesSource is the premium source of comprehensive go to market strategies and
                 implementation.
             </p>
         </span>
 
-        <nav class="footer-nav">
-            <p class="font-bold">Company</p>
-            <ul class="list-none p-0">
+        <nav class="footer-nav md:contents">
+            <p class="font-bold md:col-start-2 md:row-start-1 md:self-end">Company</p>
+            <ul class="list-none p-0 md:col-start-2 md:row-start-2">
                 <li><a href="/privacy-policy" class="text-subtext">Privacy Policy</a></li>
             </ul>
         </nav>
 
-        <nav class="footer-nav">
-            <p class="font-bold">Resources</p>
-            <ul class="list-none p-0">
+        <nav class="footer-nav md:contents">
+            <p class="font-bold md:col-start-3 md:row-start-1 md:self-end">Resources</p>
+            <ul class="list-none p-0 md:col-start-3 md:row-start-2">
                 <li>
                     <a
                         href="/blog/4-touch-patterns-for-new-account-based-sales-development-teams#infographic"
@@ -32,9 +32,9 @@
             </ul>
         </nav>
 
-        <nav class="footer-nav">
-            <p class="font-bold">Navigation</p>
-            <ul class="list-none p-0">
+        <nav class="footer-nav md:contents">
+            <p class="font-bold md:col-start-4 md:row-start-1 md:self-end">Navigation</p>
+            <ul class="list-none p-0 md:col-start-4 md:row-start-2">
                 <li><a href="/" class="text-subtext">Home</a></li>
                 <li><a href="/about-us" class="text-subtext">About</a></li>
                 <li><a href="/blog" class="text-subtext">Blog</a></li>
@@ -72,7 +72,7 @@
     .footer-nav {
         @apply mt-6 md:mt-0;
 
-        & li {
+        & li + li {
             @apply mt-2 md:mt-3;
         }
     }

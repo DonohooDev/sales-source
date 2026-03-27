@@ -1,12 +1,17 @@
 {
   "$schema": "https://json.schemastore.org/claude-code-settings.json",
-  "enabledPlugins": {
-    "typescript-lsp@claude-plugins-official": true
-  },
-  "enabledMcpjsonServers": [],
-  "enableAllProjectMcpServers": true,
   "permissions": {
-    "defaultMode": "default",
+    "allow": [
+      "Read",
+      "Edit",
+      "Write",
+      "Bash",
+      "WebFetch",
+      "WebSearch",
+      "Glob",
+      "Grep",
+      "mcp__MCP_DOCKER__*"
+    ],
     "deny": [],
     "ask": [
       "Bash(git push -u origin main)",
@@ -18,6 +23,12 @@
       "Bash(pip install*)",
       "Bash(docker *)"
     ],
-    "allow": ["Read", "Edit", "Write", "Bash", "WebFetch", "WebSearch", "Glob", "Grep", "mcp__MCP_DOCKER__*"]
+    "defaultMode": "default"
+  },
+  "enableAllProjectMcpServers": true,
+  "enabledMcpjsonServers": [],
+  "enabledPlugins": {
+    "typescript-lsp@claude-plugins-official": true,
+    "chrome-devtools-mcp@claude-plugins-official": true
   }
 }

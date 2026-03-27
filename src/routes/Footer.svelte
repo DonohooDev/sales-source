@@ -4,7 +4,7 @@
 </script>
 
 <footer>
-    <div class="flex flex-col md:flex-row md:gap-12 lg:gap-16 2xl:gap-24 content-lg">
+    <div class="flex flex-col md:flex-row md:items-start md:gap-12 lg:gap-16 2xl:gap-24 content-lg">
         <span class="flex-1">
             <img src={logo} alt="SalesSource logo" class="w-40 mb-3" />
             <p class="text-subtext">
@@ -14,15 +14,15 @@
         </span>
 
         <nav class="footer-nav">
-            <ul class="list-none">
-                <p class="font-bold">Company</p>
+            <p class="font-bold">Company</p>
+            <ul class="list-none p-0">
                 <li><a href="/privacy-policy" class="text-subtext">Privacy Policy</a></li>
             </ul>
         </nav>
 
         <nav class="footer-nav">
-            <ul class="list-none">
-                <p class="font-bold">Resources</p>
+            <p class="font-bold">Resources</p>
+            <ul class="list-none p-0">
                 <li>
                     <a
                         href="/blog/4-touch-patterns-for-new-account-based-sales-development-teams#infographic"
@@ -33,8 +33,8 @@
         </nav>
 
         <nav class="footer-nav">
-            <ul class="list-none">
-                <p class="font-bold">Navigation</p>
+            <p class="font-bold">Navigation</p>
+            <ul class="list-none p-0">
                 <li><a href="/" class="text-subtext">Home</a></li>
                 <li><a href="/about-us" class="text-subtext">About</a></li>
                 <li><a href="/blog" class="text-subtext">Blog</a></li>
@@ -70,7 +70,7 @@
     }
 
     .footer-nav {
-        @apply mt-6;
+        @apply mt-6 md:mt-0;
 
         & li {
             @apply mt-2 md:mt-3;

@@ -8,7 +8,7 @@
     export let icon: ComponentType | null = null;
     export let btnType: "primary" | "inverted" | "text" | "outlined" = "primary";
 
-    const sharedClasses = `flex justify-around items-center ${size === "lg" ? "px-8 py-3 text-lg" : size === "md" ? "px-6 py-3 text-base" : "px-5 py-2 text-base"} text-center border border-solid rounded-md whitespace-nowrap transition-colors duration-300 ease-in-out hover:shadow-xs`;
+    const sharedClasses = `inline-flex items-center gap-2 ${size === "lg" ? "px-8 py-3 text-lg" : size === "md" ? "px-6 py-3 text-base" : "px-5 py-2 text-base"} text-center border border-solid rounded-md whitespace-nowrap transition-colors duration-300 ease-in-out hover:shadow-xs`;
     const invertedClasses =
         "text-secondary bg-bg-primary hover:bg-secondary hover:text-txt-white border-secondary";
     const primaryClasses =
@@ -42,9 +42,7 @@
 
 <a {...$$restProps} href={$$restProps.href} class={`${classes} ${$$restProps.class}`}>
     {#if icon}
-        <span class="mr-3 lg:mr-5">
-            <svelte:component this={icon} size={20} />
-        </span>
+        <svelte:component this={icon} size={20} />
     {/if}
 
     {btnText}
